@@ -44,9 +44,11 @@
         
         gap: 40px;
         .image-box{
+            width: 33%;
             a{
                 border-radius: 23px;
                 overflow: hidden;
+                
                 &:before{
                     content: "";
                     display: block;

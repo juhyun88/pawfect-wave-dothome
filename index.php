@@ -143,21 +143,21 @@
     <ul class="image-section p-0 m-0  d-md-flex justify-content-between">
         <li class="image-box">
            <a href="" class="d-block position-relative">
-              <img src="./img/slogan/slogan_0.jpg">
+              <img src="/img/slogan/slogan_0.jpg">
               <span class="hover-text position-absolute text-white start-0 end-0 top-0 bottom-0  d-flex justify-content-center align-items-center align-items-lg-end p-5">사후 조치 요령 안내</span>
            </a>           
            <p class="basicfontt mt-md-4 mt-3  text-center">아름다운 이별을 준비하기 위한<br><span class="activefont">사후 조치 요령 방법</span>을 안내 드립니다.</p>
         </li>
         <li class="image-box">
             <a href="" class="d-block position-relative">
-              <img src="/img/bottom/memorial.jpg">
+              <img src="/img/bottom/memorial1.jpg">
               <span class="hover-text position-absolute text-white start-0 end-0 top-0 bottom-0  d-flex justify-content-center align-items-center align-items-lg-end p-5">장례 절차 안내</span>
             </a>            
             <p class="basicfontt  mt-4 text-center">소중한 아이를 떠나보내는 <span class="activefont">장례 절차를</span><br>처음부터 끝까지 꼼꼼히 알려 드립니다.</p>
         </li>
         <li class="image-box">
             <a href="" class="d-block position-relative">
-              <img src="/img/bottom/holding.jpg.">
+              <img src="/img/bottom/holding1.jpg"> 
               <span class="hover-text position-absolute text-white start-0 end-0 top-0 bottom-0  d-flex justify-content-center align-items-center align-items-lg-end p-5">펫로스 상담 예약하기</span>
             </a>            
             <p class="basicfontt  mt-4  text-center">장례 이후 힘드신 보호자분들을 위해<br><span class="activefont">펫로스 상담 서비스</span>가 준비되어있습니다.</p>

@@ -68,6 +68,9 @@
 #sy_imagead .image-section {
   gap: 40px;
 }
+#sy_imagead .image-section .image-box {
+  width: 33%;
+}
 #sy_imagead .image-section .image-box a {
   border-radius: 23px;
   overflow: hidden;
