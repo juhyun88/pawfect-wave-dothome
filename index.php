@@ -150,14 +150,14 @@
         </li>
         <li class="image-box">
             <a href="" class="d-block position-relative">
-              <img src="/img/bottom/">
+              <img src="/img/bottom/memorial.jpg">
               <span class="hover-text position-absolute text-white start-0 end-0 top-0 bottom-0  d-flex justify-content-center align-items-center align-items-lg-end p-5">장례 절차 안내</span>
             </a>            
             <p class="basicfontt  mt-4 text-center">소중한 아이를 떠나보내는 <span class="activefont">장례 절차를</span><br>처음부터 끝까지 꼼꼼히 알려 드립니다.</p>
         </li>
         <li class="image-box">
             <a href="" class="d-block position-relative">
-              <img src="./img/slogan/slogan_2.jpg">
+              <img src="/img/bottom/holding.jpg.">
               <span class="hover-text position-absolute text-white start-0 end-0 top-0 bottom-0  d-flex justify-content-center align-items-center align-items-lg-end p-5">펫로스 상담 예약하기</span>
             </a>            
             <p class="basicfontt  mt-4  text-center">장례 이후 힘드신 보호자분들을 위해<br><span class="activefont">펫로스 상담 서비스</span>가 준비되어있습니다.</p>
