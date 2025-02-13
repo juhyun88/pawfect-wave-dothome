@@ -150,7 +150,7 @@
         </li>
         <li class="image-box">
             <a href="" class="d-block position-relative">
-              <img src="./img/slogan/slogan_1.jpg">
+              <img src="/img/bottom/">
               <span class="hover-text position-absolute text-white start-0 end-0 top-0 bottom-0  d-flex justify-content-center align-items-center align-items-lg-end p-5">장례 절차 안내</span>
             </a>            
             <p class="basicfontt  mt-4 text-center">소중한 아이를 떠나보내는 <span class="activefont">장례 절차를</span><br>처음부터 끝까지 꼼꼼히 알려 드립니다.</p>
@@ -164,10 +164,13 @@
         </li>
     </ul>
   </div>
+  <!-- //메인 전체 배너 1// -->
   <div class="banner-container sectionContent  d-flex flex-column gap-5 " id="ehwave_banner1">
     <div class="ehcontent position-relative ehcontentBanner1  mb-5" >
-     
+    <a href="./page/cybermemorial.php" target=""> 
+   
       <div class="container position-absolute m-auto top-0 h-100 start-0 end-0 d-flex justify-content-end align-items-center">
+
         <div class="col-6 text-start basicfonttda d-none d-lg-block">
           <p class="texttt-large mb-4 r4font">첫 만남 <span class="bigfont">'안녕'</span>의 순간부터 행복했던 모든 추억을
             <br>나누고 위로와 추모를 함께하겠습니다.</p>
@@ -180,9 +183,10 @@
             함께하겠습니다.</p>
         </div>
       </div>
+    </a>
     </div>
   
-    
+    <!-- //메인 전체 배너 2// -->
     <div class="ehcontent position-relative ehcontentBanner2">
       
         <div class="container position-absolute m-auto top-0 h-100 start-0 end-0 d-flex justify-content-start align-items-center">
@@ -208,7 +212,15 @@
     <div class="row g-3 align-items-center justify-content-center">
       <div class="col-md-6 d-flex justify-content-center align-content-center">
         <div class="petros square-box">
-          <img src="./img/bottom/petros_care.jpg" alt="" class="img-fluid petrossize">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/4o-n_v1mKSw?start=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
         </div>
       </div>
       <div class="col-md-6 text-box text-end">
@@ -221,7 +233,15 @@
   <div class="row g-3 align-items-center justify-content-center flex-row-reverse">
     <div class="col-md-6 d-flex justify-content-center align-content-center">
       <div class="petros_wave square-box">
-        <img src="./img/bottom/pet_wave.jpg" alt="" class="img-fluid petrossize">
+      <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/r7yAhSSaH3c?start=1" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+      </iframe>
       </div> 
     </div>
     <div class="col-md-6 text-box text-start">

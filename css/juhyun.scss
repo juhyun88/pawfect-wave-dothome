@@ -128,6 +128,9 @@
       
     
       &:hover{
+        .d1li{
+          padding: 0 1rem;
+        }
         @media (min-width:1024px) {
           &:before{
             height: 280px;
@@ -144,8 +147,10 @@
       .d1li{
         display: inline-block;
         position: relative; 
+        transition: 0.5s;
 
         &:hover{
+         
           .d1a{
             color:#006838 !important; //대메뉴활성화
           }
@@ -395,8 +400,8 @@
 .btn_petros{
   margin-top:47px;
   font-family: "Noto Sans KR";
-  width: 264px;
-  height: 67px;
+  width: 164px;
+  height: 40px;
   color: #1E1E1E;
   border: 1px solid $text-color;
   font-size: 30px;
@@ -426,17 +431,13 @@
 // }
 .petros {
   width: 100%;
-  padding-top: 75%;
   overflow: hidden;
-  border-radius: 20px 20px 100px 20px;
   position: relative;
 }
 
 .petros_wave{
   width: 100%;
-  padding-top: 75%;
   overflow: hidden;
-  border-radius: 20px 20px 20px 100px;
   position: relative;
 }
 
@@ -447,7 +448,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 20px 20px 100px 20px;
 }
 .petros_wave img{
   position: absolute;
@@ -456,7 +456,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 20px 20px 20px 100px;
 }
 
 .petrossize {

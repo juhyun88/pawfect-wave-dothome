@@ -93,18 +93,19 @@
               <a href="" class="d1a d-flex justify-content-center align-items-center">장례절차</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                    <a href="">스톤 장례</a></li>
+                    <a href="/page/procedures.php">스톤 장례</a></li>
                   <li class="d2li">
-                    <a href="">일반 장례</a></li>
+                    <a href="/page/procedures.php">일반 장례</a></li>
                 </ul>
             </li>
             <li class="d1li position-relative text-center"> 
               <a href="" class="d1a d-flex justify-content-center align-items-center">장례비용</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                    <a href="">스톤 장례</a></li>
+                    <a href="/page/price.php">스톤 장례</a></li>
                   <li class="d2li">
-                    <a href="">일반 장례</a></li>
+                    <a href="/page/price.php">일반 장례</a></li>
+                  
                 </ul>
             </li>
             <li class="d1li position-relative text-center"> 
@@ -120,22 +121,26 @@
               <a href="" class="d1a d-flex justify-content-center align-items-center">부가서비스</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                    <a href="">운구서비스</a></li>
+                    <a href="/page/service.phpice.php">운구서비스</a></li>
                   <li class="d2li">
-                    <a href="">비동행<br>장례서비스</a></li>
+                    <a href="/page/service.phpice.php">비동행 장례서비스</a></li>
                   <li class="d2li">
-                    <a href="">봉안당</a></li>
+                    <a href="/page/service.phpice.php">봉안당(산골)</a></li>
                   <li class="d2li">
-                    <a href="">산골</a></li>
+                    <a href="/page/service.phpice.php">사이버추모관</a></li>
                 </ul>
             </li>
             <li class="d1li position-relative text-center"> 
               <a href="" class="d1a d-flex justify-content-center align-items-center">고객지원센터</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                    <a href="">펫로스케어</a></li>
+                    <a href="/page/petlose.php">펫로스케어</a></li>
                   <li class="d2li">
-                    <a href="">파우펙트&펫<br>협력병원</a></li>
+                  <a href="/page/petlose.php">보험</a></li>
+                  <li class="d2li">
+                    <a href="/page/hospital.php">파우펙트&펫 협력병원</a></li>
+                  <li class="d2li">
+                    <a href="/page/question.php">자주묻는질문</a></li>
                 </ul>
             </li>
           </ul>
