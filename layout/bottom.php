@@ -24,7 +24,7 @@
      <a href="">
       <svg xmlns="http://www.w3.org/2000/svg" width="122" height="122" viewBox="0 0 122 122" fill="none">
         <path d="M61 121C94.1371 121 121 94.1371 121 61C121 27.8629 94.1371 1 61 1C27.8629 1 1 27.8629 1 61C1 94.1371 27.8629 121 61 121Z" fill="white" stroke="#006838" stroke-miterlimit="10"/>
-        <image href="/img/svg/phone.svg" x="20" y="20" width="80" height="80" />
+        <image href="https://pawfectwave.vercel.app/img/svg/phone.svg" x="20" y="20" width="80" height="80" />
       </svg>
         
 
@@ -34,7 +34,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="122" height="122" viewBox="0 0 122 122" fill="none">
         
         <path d="M61 121C94.1371 121 121 94.1371 121 61C121 27.8629 94.1371 1 61 1C27.8629 1 1 27.8629 1 61C1 94.1371 27.8629 121 61 121Z" fill="white" stroke="#006838" stroke-miterlimit="10"/>
-        <image href="/img/svg/top.svg" x="35" y="35" width="50" height="50" />
+        <image href="https://pawfectwave.vercel.app/img/svg/top.svg" x="35" y="35" width="50" height="50" />
         
       </svg>
       
@@ -59,10 +59,10 @@
       </div>
     
       <div class="social_icons d-flex mb-4 mb-lg-0 align-items-center">
-        <a href="#" class="blog"><img src="/img/icon/footer_blog.svg" alt="블로그 바로가기"></a>
-        <a href="#" class="insta"><img src="/img/icon/footer_instagram.svg" alt="인스타그램 바로가기"></a>
-        <a href="#" class="facebook"><img src="/img/icon/footer_facebook.svg" alt="페이스북 바로가기"></a>
-        <a href="#" class="youtube"><img src="/img/icon/footer_youtube.svg" alt="유튜브 바로가기"></a>
+        <a href="#" class="blog"><img src="https://pawfectwave.vercel.app/img/icon/footer_blog.svg" alt="블로그 바로가기"></a>
+        <a href="#" class="insta"><img src="https://pawfectwave.vercel.app/img/icon/footer_instagram.svg" alt="인스타그램 바로가기"></a>
+        <a href="#" class="facebook"><img src="https://pawfectwave.vercel.app/img/icon/footer_facebook.svg" alt="페이스북 바로가기"></a>
+        <a href="#" class="youtube"><img src="https://pawfectwave.vercel.app/img/icon/footer_youtube.svg" alt="유튜브 바로가기"></a>
       </div>
     </div>
     

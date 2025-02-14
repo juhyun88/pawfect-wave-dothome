@@ -8,7 +8,7 @@
     <meta name="description" content="" /> 
     <meta property="og:locale" content="ko_KR" /> 
     <meta property="og:site_name" content="" /> 
-    <meta property="og:url" content="//pawfectwave-team-react.vercel.app"/> 
+    <meta property="og:url" content="//pawfectwave.vercel.app"/> 
     <meta property="og:type" content="website" /> 
     <meta property="og:title" content="powfectwave" /> 
     <meta property="og:description" content="반려동물의 마지막을 함께하는 반려동물 장례 서비스 플랫폼" /> 

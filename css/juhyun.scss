@@ -403,18 +403,12 @@
   width: 130px;
   height: 30px;
   color: #1E1E1E;
-  border: 1px solid $text-color;
   font-size: 15px;
   font-weight: 400;
   cursor: pointer;
   background-color: #FFF;
-  border-radius: 10px;
   padding-bottom: 5px;
-}
-.btn_petros:hover{
-  background-color: #93ab9d;
-  border: none; 
-  color: white;
+  border: none;
 }
 // .petros_box {
 //   display: flex;
@@ -704,3 +698,25 @@ padding: 60px 0;
 }
 }
 
+/////////////////////////////////////////////////////////////////////////////////////
+
+  .mainimg {
+  
+    height: 386px; // 높이를 386px로 고정
+    overflow: hidden; // 이미지가 넘치지 않도록 숨김 처리
+
+    img {
+      width: 2000px;
+      height: 368px; // 높이를 부모 컨테이너에 맞게 꽉 채움
+      
+    }
+  }
+
+  .img_wrap {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }

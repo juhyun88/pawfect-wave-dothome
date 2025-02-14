@@ -139,7 +139,7 @@
 }
 #ehwave_banner1 .ehcontentBanner1 {
   position: relative;
-  background: url(/img/banner/banner_1.jpg) no-repeat;
+  background: url(https://pawfectwave.vercel.app/img/banner/banner_1.jpg) no-repeat;
   background-position: center;
   background-size: auto 100%;
 }
@@ -163,7 +163,7 @@
   }
 }
 #ehwave_banner1 .ehcontentBanner2 {
-  background: url(/img/banner/banner_2.jpg) no-repeat;
+  background: url(https://pawfectwave.vercel.app/img/banner/banner_2.jpg) no-repeat;
   background-position: center;
   background-size: 100% auto;
 }

@@ -336,19 +336,12 @@
   width: 130px;
   height: 30px;
   color: #1E1E1E;
-  border: 1px solid #1E1E1E;
   font-size: 15px;
   font-weight: 400;
   cursor: pointer;
   background-color: #FFF;
-  border-radius: 10px;
   padding-bottom: 5px;
-}
-
-.btn_petros:hover {
-  background-color: #93ab9d;
   border: none;
-  color: white;
 }
 
 .petros {
@@ -584,4 +577,22 @@
       right: -2268px;
     }
   }
+}
+
+.mainimg {
+  height: 386px;
+  overflow: hidden;
+}
+.mainimg img {
+  width: 2000px;
+  height: 368px;
+}
+
+.img_wrap {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 }

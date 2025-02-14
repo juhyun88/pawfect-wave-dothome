@@ -6,19 +6,19 @@
       <div class="swiper overflow-visible container mt-5" id="mainSlider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./img/main/thumbnail_1.jpg" alt="Slide 1">
+            <img src="https://pawfectwave.vercel.app/img/main/thumbnail_1.jpg" alt="Slide 1">
           </div>
           <div class="swiper-slide">
-            <img src="./img/main/thumbnail_2.jpg" alt="Slide 2">
+            <img src="https://pawfectwave.vercel.app/img/main/thumbnail_2.jpg" alt="Slide 2">
           </div>
           <div class="swiper-slide">
-            <img src="./img/main/thumbnail_3.jpg" alt="Slide 3">
+            <img src="https://pawfectwave.vercel.app/img/main/thumbnail_3.jpg" alt="Slide 3">
           </div>
           <div class="swiper-slide">
-            <img src="./img/main/thumbnail_4.jpg" alt="Slide 4">
+            <img src="https://pawfectwave.vercel.app/img/main/thumbnail_4.jpg" alt="Slide 4">
           </div>
           <div class="swiper-slide">
-            <img src="./img/main/thumbnail_5.jpg" alt="Slide 5">
+            <img src="https://pawfectwave.vercel.app/img/main/thumbnail_5.jpg" alt="Slide 5">
           </div>
         </div>
         <div class="swiper-pagination mt-5 position-relative d-flex gap-0"></div>
@@ -40,7 +40,7 @@
     <div class="love_list d-md-flex justify-content-between align-items-center mt-5">
       <div class="left_top">
         <div class="image-container position-relative">
-          <img src="./img/main_ci/love_1.png" alt="eunhye_love" class="img-fluid">
+          <img src="https://pawfectwave.vercel.app/img/main_ci/love_1.png" alt="eunhye_love" class="img-fluid">
           <span class="position-absolute text-white w-100 top-50 start-50 translate-middle d-md-none text-center">사랑</span>
           
       
@@ -65,7 +65,7 @@
     <div class="love_list d-flex flex-row-reverse justify-content-between align-items-center">
       <div class="left">
         <div class="image-container" style="position: relative;">
-          <img src="./img/main_ci/Hello_2.png" alt="eunhye_hello" class="img-fluid">
+          <img src="https://pawfectwave.vercel.app/img/main_ci/Hello_2.png" alt="eunhye_hello" class="img-fluid">
           <span class="position-absolute text-white w-100 top-0 h-100 start-0  d-flex justify-content-center align-items-center  d-md-none">인사</span>
           
           <div class="hello_2">
@@ -74,7 +74,7 @@
           </div>
           
           <div class="hand-container">
-            <img src="./img/main_ci/hand_hello.svg" alt="eunhye_hello_hand" class="hand-animation">
+            <img src="https://pawfectwave.vercel.app/img/main_ci/hand_hello.svg" alt="eunhye_hello_hand" class="hand-animation">
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@
     <div class="love_list d-flex justify-content-between align-items-center">
       <div class="left_Memories position-relative">
         <div class="image-container">
-          <img src="./img/main_ci/Memories_3.png" alt="eunhye_Memories" class="img-fluid">
+          <img src="https://pawfectwave.vercel.app/img/main_ci/Memories_3.png" alt="eunhye_Memories" class="img-fluid">
             
           <span class="position-absolute text-white w-100 top-50 start-50 translate-middle d-md-none text-center">추억</span>
           <div class="Memories-container">
@@ -143,21 +143,21 @@
     <ul class="image-section p-0 m-0  d-md-flex justify-content-between">
         <li class="image-box">
            <a href="" class="d-block position-relative">
-              <img src="/img/slogan/slogan_0.jpg">
+              <img src="https://pawfectwave.vercel.app/img/slogan/slogan_0.jpg">
               <span class="hover-text position-absolute text-white start-0 end-0 top-0 bottom-0  d-flex justify-content-center align-items-center align-items-lg-end p-5">사후 조치 요령 안내</span>
            </a>           
            <p class="basicfontt mt-md-4 mt-3  text-center">아름다운 이별을 준비하기 위한<br><span class="activefont">사후 조치 요령 방법</span>을 안내 드립니다.</p>
         </li>
         <li class="image-box">
             <a href="" class="d-block position-relative">
-              <img src="/img/bottom/memorial1.jpg">
+              <img src="https://pawfectwave.vercel.app/img/bottom/memorial1.jpg">
               <span class="hover-text position-absolute text-white start-0 end-0 top-0 bottom-0  d-flex justify-content-center align-items-center align-items-lg-end p-5">장례 절차 안내</span>
             </a>            
             <p class="basicfontt  mt-4 text-center">소중한 아이를 떠나보내는 <span class="activefont">장례 절차를</span><br>처음부터 끝까지 꼼꼼히 알려 드립니다.</p>
         </li>
         <li class="image-box">
             <a href="" class="d-block position-relative">
-              <img src="/img/bottom/holding1.jpg"> 
+              <img src="https://pawfectwave.vercel.app/img/bottom/holding1.jpg"> 
               <span class="hover-text position-absolute text-white start-0 end-0 top-0 bottom-0  d-flex justify-content-center align-items-center align-items-lg-end p-5">펫로스 상담 예약하기</span>
             </a>            
             <p class="basicfontt  mt-4  text-center">장례 이후 힘드신 보호자분들을 위해<br><span class="activefont">펫로스 상담 서비스</span>가 준비되어있습니다.</p>
@@ -227,7 +227,8 @@
         <h2>Petros Care</h2>
         <h1>펫로스 케어</h1>
         <p>펫로스 증후군으로 인한 마음의 치유가<br>필요한 보호자님을 위한 케어 입니다.</p>
-        <button class="btn_petros my-4">view more</button>
+        <button class="btn_petros my-4" onclick="window.location.href='https://www.youtube.com'">< 유튜브 이동하기</button>
+        <button class="btn_petros my-4" onclick="window.location.href='/page/petlose.php'">자세히보기 ></button>
       </div>
     </div>
   <div class="row g-3 align-items-center justify-content-center flex-row-reverse mt-5">
@@ -248,7 +249,8 @@
       <h2>Pawfect & Pet Wave</h2>
       <h1>파우펙트 & 펫 웨이브</h1>
       <p>생애의 모든 순간을 함께하는, 당신의 반려동물 케어 파트너<br>동물의료센터와 함께해 건강 관리부터 마지막 순간까지 함께<br>해드립니다.</p>
-      <button class="btn_petros">view more</button>
+      <button class="btn_petros" onclick="window.location.href='/page/hospital.php'">< 자세히보기</button>
+      <button class="btn_petros" onclick="window.location.href='http://www.youtube.com'">유튜브 이동하기 ></button>
     </div>
   </div>
 </div>
