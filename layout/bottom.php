@@ -53,7 +53,7 @@
       <div>
         <h2> 1688-0000</h2>
         <p class="call">연중무휴 24시간 상담 가능</p>
-        <p class="info">주식회사 파우펙트 웨이브｜ 서울 특별시 강남구 논현로 000 ｜ 대표 김현아 <br>
+        <p class="info">주식회사 파우펙트 웨이브｜ 서울 특별시 강남구 논현로 000 ｜ 대표 정은혜, 신주현 <br>
           <span class="d-none d-lg-inline">TEL 00 0000 0000｜FAX 00 0000 0000 ｜</span>사업자등록번호 000 00 00000 <br>
           <span class="d-none d-lg-inline">제휴 문의  dfdfdf@fawfectwave.com｜서비스 이용 문의   dfdfdf@fawfectwave.com</span></p>
       </div>

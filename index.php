@@ -174,7 +174,7 @@
         <div class="col-6 text-start basicfonttda d-none d-lg-block">
           <p class="texttt-large mb-4 r4font">첫 만남 <span class="bigfont">'안녕'</span>의 순간부터 행복했던 모든 추억을
             <br>나누고 위로와 추모를 함께하겠습니다.</p>
-          <p class="text-small d-none d-lg-block">사랑하는 반려동물과 걸어온 모든 순간의<br> 소중한 편지를
+          <p class="text-small d-none d-lg-block fw-bold">사랑하는 반려동물과 걸어온 모든 순간의<br> 소중한 편지를
             추모관에서 전시하고 있습니다.</p>  
         </div>
         <div class="d-block d-lg-none ">
@@ -230,8 +230,8 @@
         <button class="btn_petros my-4">view more</button>
       </div>
     </div>
-  <div class="row g-3 align-items-center justify-content-center flex-row-reverse">
-    <div class="col-md-6 d-flex justify-content-center align-content-center">
+  <div class="row g-3 align-items-center justify-content-center flex-row-reverse mt-5">
+    <div class="col-md-6 d-flex justify-content-center align-content-center px-130">
       <div class="petros_wave square-box">
       <iframe 
           width="560" 
@@ -248,7 +248,7 @@
       <h2>Pawfect & Pet Wave</h2>
       <h1>파우펙트 & 펫 웨이브</h1>
       <p>생애의 모든 순간을 함께하는, 당신의 반려동물 케어 파트너<br>동물의료센터와 함께해 건강 관리부터 마지막 순간까지 함께<br>해드립니다.</p>
-      <button class="btn_petros my-4">view more</button>
+      <button class="btn_petros">view more</button>
     </div>
   </div>
 </div>

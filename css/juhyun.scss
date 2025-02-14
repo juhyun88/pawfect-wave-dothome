@@ -378,36 +378,38 @@
 }
 
 #jh h1 {
-  font-size: 1.125rem;
+  font-size: 30px;
   color: $primary-color;
   margin-bottom: 40px;
 
 }
 
 #jh h2 {
-  font-size: 1.875rem;
+  font-size: 18px;
   color: $text-color;
-  margin-bottom: 56px;
+  margin-bottom: 15px;
 }
 
 #jh p {
   color: rgba($text-color, 0.7);
   font-family: "Paperlogy 3 Light";
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 300;
 }
 
 .btn_petros{
-  margin-top:47px;
+  margin-top:24px;
   font-family: "Noto Sans KR";
-  width: 164px;
-  height: 40px;
+  width: 130px;
+  height: 30px;
   color: #1E1E1E;
   border: 1px solid $text-color;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 400;
   cursor: pointer;
   background-color: #FFF;
+  border-radius: 10px;
+  padding-bottom: 5px;
 }
 .btn_petros:hover{
   background-color: #93ab9d;
@@ -467,11 +469,13 @@
 /* 텍스트 오른쪽 정렬 */
 .text-box.text-end {
   text-align: right;
+  padding-right: 130px;
 }
 
 /* 텍스트 왼쪽 정렬 */
 .text-box.text-start {
   text-align: left;
+  padding-left: 50px;
 }
 
 //하단 업체 슬라이드

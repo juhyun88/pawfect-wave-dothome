@@ -121,13 +121,13 @@
               <a href="" class="d1a d-flex justify-content-center align-items-center">부가서비스</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                    <a href="/page/service.phpice.php">운구서비스</a></li>
+                    <a href="/page/service.php">운구서비스</a></li>
                   <li class="d2li">
-                    <a href="/page/service.phpice.php">비동행 장례서비스</a></li>
+                    <a href="/page/service.php">비동행 장례서비스</a></li>
                   <li class="d2li">
-                    <a href="/page/service.phpice.php">봉안당(산골)</a></li>
+                    <a href="/page/service.php">봉안당(산골)</a></li>
                   <li class="d2li">
-                    <a href="/page/service.phpice.php">사이버추모관</a></li>
+                    <a href="/page/service.php">사이버추모관</a></li>
                 </ul>
             </li>
             <li class="d1li position-relative text-center"> 
