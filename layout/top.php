@@ -12,13 +12,13 @@
     <meta property="og:type" content="website" /> 
     <meta property="og:title" content="powfectwave" /> 
     <meta property="og:description" content="반려동물의 마지막을 함께하는 반려동물 장례 서비스 플랫폼" /> 
-    <meta property="og:image" content="/img/svg/oq.svg" />
+    <meta property="og:image" content="https://pawfectwave.vercel.app/img/svg/oq.svg" />
 
     <title>PawpectWave</title>
      <!-- 파비콘 -->
-    <link rel="shortcut icon" type="image/x-icon" href="/img/svg/logo.svg" />
-    <link rel="apple-touch-icon" href="/img/svg/logo.svg" />
-    <link rel="apple-touch-icon-precomposed" href="/img/svg/logo.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="https://pawfectwave.vercel.app/img/svg/logo.svg" />
+    <link rel="apple-touch-icon" href="https://pawfectwave.vercel.app/img/svg/logo.svg" />
+    <link rel="apple-touch-icon-precomposed" href="https://pawfectwave.vercel.app/img/svg/logo.svg">
     <meta name="msapplication-TileImage" content="" size="270x270" />
     <!-- 폰트 CDN -->
     <link rel="preconnect" href="//fonts.googleapis.com">
@@ -51,7 +51,7 @@
       <div class="container d-flex justify-content-between align-items-center flex-wrap">
         <h1 class="order-0 mb-0 ">
           <a href="/" class="logo_container" >
-            <img src="/img/svg/logo.svg" alt="" class="logo d-none d-lg-block">
+            <img src="https://pawfectwave.vercel.app/img/svg/logo.svg" alt="" class="logo d-none d-lg-block">
             <span alt="" class="logo  d-lg-none main-primery">
               <svg width="75" height="46" viewBox="0 0 75 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1261_850)">
@@ -144,12 +144,12 @@
                 </ul>
             </li>
           </ul>
-          <button class="closebtn"><img src="/img/svg/X boxbutton_line.svg" alt=""></button>
+          <button class="closebtn"><img src="https://pawfectwave.vercel.app/img/svg/X boxbutton_line.svg" alt=""></button>
         </div>
 
         <ul class="reservation d-flex justify-content-end align-items-center order-2 mb-0 p-0 ms-auto">
-          <li><a href=""><img src="/img/svg/here.svg" alt="" class="here"></a></li>
-          <li class="text-nowrap"><a href=""><button class="reservation-button"><img src="/img/svg/calendar.svg" alt="">
+          <li><a href=""><img src="https://pawfectwave.vercel.app/img/svg/here.svg" alt="" class="here"></a></li>
+          <li class="text-nowrap"><a href=""><button class="reservation-button"><img src="https://pawfectwave.vercel.app/img/svg/calendar.svg" alt="">
             <span>장례 예약</span></button></a>
           </li>
         </ul>
