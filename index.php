@@ -2,7 +2,7 @@
     <?php include_once("./layout/top.php"); ?>
 
     
-    <div class="swiper-container pt-5 mt-lg-5 mt-3" id="jy_swiper">
+    <!-- <div class="swiper-container pt-5 mt-lg-5 mt-3" id="jy_swiper">
       <div class="swiper overflow-visible container mt-5" id="mainSlider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -23,9 +23,20 @@
         </div>
         <div class="swiper-pagination mt-5 position-relative d-flex gap-0"></div>
       </div>
+    </div> -->
+    <!-- <div class="background-container">
+        <div class="animation-area">
+            <img src="https://pawfectwave.vercel.app/img/main/hand_main.svg" alt="손" class="background-image" id="hand">
+            <img src="https://pawfectwave.vercel.app/img/main/Main background1.svg" alt="강아지 없음" class="dog" id="dog1">
+            <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 중간" class="dog" id="dog2">
+            <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 앉은 모습" class="dog" id="dog3">
+        </div>
+    </div> -->
+    <div class="main_background">
+        <img src="https://pawfectwave.vercel.app/img/main/hand_main.svg" alt="손 이미지" class="hand" />
+        <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 1" class="dog1" />
+        <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 2" class="dog2" />
     </div>
-
-
 
 
 

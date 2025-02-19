@@ -168,7 +168,7 @@
           // padding: 0 22.37px;
           // font-family: 'Paperlogy 5 Medium';
           font-family: "Paperlogy 4 Regular";
-          color: black;
+          color: white;
           font-weight: 500;
           // letter-spacing: -0.085em;
           // font-family: "Noto Sans KR";
@@ -247,6 +247,10 @@
   align-items: center;
   justify-content:center;
   gap: 5px;
+  &:hover{
+    background-color: #92aa9c;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
 
   @media (max-width:1024px) {
     width:1.7rem;
@@ -288,89 +292,151 @@
 }
 
 
-#jy_swiper{
-//메인슬라이드
-  &.swiper-container {
-    width: 100%;
-    height: v100;
-    margin: 0 auto;
-    overflow: visible;
-    position: relative;
-    // margin-bottom: 100px;
+// #jy_swiper{
+// //메인슬라이드
+//   &.swiper-container {
+//     width: 100%;
+//     height: v100;
+//     margin: 0 auto;
+//     overflow: visible;
+//     position: relative;
+//     // margin-bottom: 100px;
   
-    .swiper-wrapper {
-      display: flex;
-      align-items: center;
-    }
+//     .swiper-wrapper {
+//       display: flex;
+//       align-items: center;
+//     }
   
-    .swiper-slide {
-      flex-shrink: 0;
-      width: 1280px; // 메인 슬라이드 크기 고정
-      height: 600px; // 슬라이드 높이 변경
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      transition: transform 0.5s ease, opacity 0.5s ease;
-      border-radius: 20px;
-      @media (max-width:1024px){
-        height: 400px;
-      }
+//     .swiper-slide {
+//       flex-shrink: 0;
+//       width: 1280px; // 메인 슬라이드 크기 고정
+//       height: 600px; // 슬라이드 높이 변경
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       overflow: hidden;
+//       transition: transform 0.5s ease, opacity 0.5s ease;
+//       border-radius: 20px;
+//       @media (max-width:1024px){
+//         height: 400px;
+//       }
   
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        opacity: 0.5;
-        border-radius: 20px;
-        transition: transform 0.5s ease, opacity 0.5s ease;
-      }
-    }
+//       img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: contain;
+//         opacity: 0.5;
+//         border-radius: 20px;
+//         transition: transform 0.5s ease, opacity 0.5s ease;
+//       }
+//     }
   
-    /* 메인 슬라이드 */
-    .swiper-slide-active {
-      transform: scale(1);
-      opacity: 1;
+//     /* 메인 슬라이드 */
+//     .swiper-slide-active {
+//       transform: scale(1);
+//       opacity: 1;
   
-      img {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
+//       img {
+//         transform: scale(1);
+//         opacity: 1;
+//       }
+//     }
   
-    /* 양 옆 슬라이드 */
-    .swiper-slide-prev,
-    .swiper-slide-next {
-      // width: 1200px; // 중앙과 크기 조정
-      // height: 670px; // 높이 동일하게 맞춤
-      transform: scale(0.9); // 크기 줄이기
-      opacity: 0.7;
-    }
+//     /* 양 옆 슬라이드 */
+//     .swiper-slide-prev,
+//     .swiper-slide-next {
+//       // width: 1200px; // 중앙과 크기 조정
+//       // height: 670px; // 높이 동일하게 맞춤
+//       transform: scale(0.9); // 크기 줄이기
+//       opacity: 0.7;
+//     }
+//   }
+  
+//   /* 하단 막대 바 (페이지네이션) */
+//   .swiper-pagination {
+//     position: absolute;
+//     bottom: 20px;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     gap: 10px; // 간격 조정
+  
+//     .swiper-pagination-bullet {
+//       width: 50px;
+//       height: 8px;
+//       background-color: #e0e0e0;
+//       border-radius: 5px;
+//       cursor: pointer;
+//       transition: background-color 0.3s ease;
+//     }
+  
+//     .swiper-pagination-bullet-active {
+//       background-color: #008000; // 활성화된 막대 색상
+//     }
+//   }
+// }
+
+//메인 슬라이드 손
+.main_background {
+  background-image: url('https://pawfectwave.vercel.app/img/main/Main background1.svg'); /* 배경 이미지 */
+  background-size: cover; /* 전체 화면에 꽉 차게 */
+  position: relative; /* 자식 요소의 절대 위치를 위한 기준 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 전체 화면 높이 */
+}
+
+.hand {
+  position: absolute;
+  width: 600px; /* 손 이미지 크기 조정 */
+  z-index: 1; /* 손 이미지가 강아지 이미지 아래에 오도록 설정 */
+}
+
+.dog1, .dog2 {
+  position: absolute;
+  width: 300px; /* 강아지 이미지 크기 */
+  opacity: 0; /* 처음에는 보이지 않음 */
+  transform: translateY(-100px); /* 화면 위에서 시작 */
+  z-index: 2; /* 손보다 위에 위치 */
+  margin-left: 100px;
+}
+
+@keyframes showDog1 {
+  0% {
+      opacity: 0; /* 처음에는 보이지 않음 */
+      transform: translateY(-200px); /* 위에서 시작 */
   }
-  
-  /* 하단 막대 바 (페이지네이션) */
-  .swiper-pagination {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 10px; // 간격 조정
-  
-    .swiper-pagination-bullet {
-      width: 50px;
-      height: 8px;
-      background-color: #e0e0e0;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-  
-    .swiper-pagination-bullet-active {
-      background-color: #008000; // 활성화된 막대 색상
-    }
+  50% {
+      opacity: 1; /* 완전히 보이게 */
+      transform: translateY(30px); /* 중간 위치 */
+  }
+  100% {
+      opacity: 0; /* 사라지게 설정 */
+      transform: translateY(30px);
+      display: none;
   }
 }
+
+@keyframes showDog2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dog1 {
+  animation: showDog1 3s ease-out forwards; /* 첫 번째 강아지 등장 */
+}
+
+.dog2 {
+  animation: showDog2 3s ease-out 3s forwards; /* 첫 번째 강아지 후 두 번째 강아지 등장 */
+}
+
+// 메인슬라이드 손 끝
 
 #jh h1, h2 {
   font-family: "Paperlogy 4 Regular";
