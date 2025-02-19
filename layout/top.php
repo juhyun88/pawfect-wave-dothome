@@ -26,17 +26,20 @@
     <link href="//fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="//fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2">
     <link rel="preconnect" href="//fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2">
-
+    <!-- 아이콘 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- 리셋 CDN -->
     <link href="//cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
     <link href="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
     <!-- 플러그인 -->
-    <link rel="stylesheet"href="//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>     
+    
  
 
-
+    
     <link rel="stylesheet" href="/css/common.css">
 
     <!-- 커스텀 -->
@@ -148,7 +151,7 @@
         </div>
 
         <ul class="reservation d-flex justify-content-end align-items-center order-2 mb-0 p-0 ms-auto">
-          <li><a href=""><img src="https://pawfectwave.vercel.app/img/svg/here.svg" alt="" class="here"></a></li>
+          <li><a href=""><i class="bi bi-geo-alt fs-4 text-white me-3"></i></a></li>
           <li class="text-nowrap"><a href=""><button class="reservation-button"><img src="https://pawfectwave.vercel.app/img/svg/calendar.svg" alt="">
             <span>장례 예약</span></button></a>
           </li>

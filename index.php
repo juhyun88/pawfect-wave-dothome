@@ -37,6 +37,30 @@
         <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 1" class="dog1" />
         <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 2" class="dog2" />
     </div>
+    
+
+
+    <div class="swiper" id="mainSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide mainbg0 border p-5">
+          <span class="slide-text">Love<br>사라지지 않는 사랑, 기억은 영원히 남습니다</span>
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background1.svg" alt="러브 이미지" class="lovebg" />
+        </div>
+        <div class="swiper-slide mainbg1 border p-5">
+          <span class="slide-text">Greetings<br>사라지지 않는 사랑, 기억은 영원히 남습니다</span>
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background2.svg" alt="그리팅 이미지" class="greeting" />
+        </div>
+        <div class="swiper-slide mainbg2 border p-5">
+          <span class="slide-text">Memories<br>사라지지 않는 사랑, 기억은 영원히 남습니다</span>
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background3.svg" alt="메모리 이미지" class="memory" />
+        </div>
+      </div>
+    </div>
+
+  <!-- 텍스트 버튼 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
 
 
 

@@ -82,13 +82,34 @@
 
     
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        const slider = document.querySelector(".slider");
+        
+        function showSlide(index) {
+            if (index < 0) {
+                index = slides.length - 1;
+            } else if (index >= slides.length) {
+                index = 0;
+            }
+            currentIndex = index;
+            slider.style.transform = `translateX(-${index * 100}vw)`;
+        }
+        
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+        
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
 
-    <script src="/js/main.js">
-
+        setInterval(nextSlide, 5000); // 5초마다 자동 슬라이드
     </script>
     
     <!-- 커스텀 자바스크립트 -->
+    <script src="/js/main.js"></script>
     <script src="/js/common.js"></script>
       <!-- Bootstrap JS, Popper.js, jQuery CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
