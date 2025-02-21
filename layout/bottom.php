@@ -45,6 +45,9 @@
      </a>
   </div>
  <!--// eunhye  -->
+ <?php if(!defined('_INDEX_')){ // 서브페이지에서만 등장 ?>
+ </div>
+ <?php } ?>
 
 <footer id="ft">
 

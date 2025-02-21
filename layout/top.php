@@ -159,3 +159,6 @@
   
 
     </header>
+    <?php if(!defined('_INDEX_')){ // 서브페이지에서만 등장 ?>
+     <div class='contentSection' style='background:url(https://<?php echo IMG_URL; ?>/img/banner/memorial_tableimage.jpg) no-repeat center'>
+    <? } ?>

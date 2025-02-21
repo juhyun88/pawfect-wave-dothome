@@ -1,5 +1,9 @@
 
-    <?php include_once("./layout/top.php"); ?>
+    <?php 
+    define('_INDEX_', true);
+    include_once("./config.php");    
+    include_once(ROOT_DIR.'/layout/top.php'); 
+    ?>
 
     
     <!-- <div class="swiper-container pt-5 mt-lg-5 mt-3" id="jy_swiper">
@@ -32,13 +36,18 @@
             <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 앉은 모습" class="dog" id="dog3">
         </div>
     </div> -->
-    <div class="main_background">
+    <div class="main_background" id="introbanner">
         <img src="https://pawfectwave.vercel.app/img/main/hand_main.svg" alt="손 이미지" class="hand" />
         <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 1" class="dog1" />
         <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 2" class="dog2" />
-   
+    </div>
     
-
+   <!-- <script>
+    const introbanner = document.querySelector("#introbanner");
+    setTimeout(() => {
+      introbanner.classList.add('d-none');
+    }, 6000);
+   </script> -->
 
     <div class="swiper" id="mainSwiper">
       <div class="swiper-wrapper">
@@ -59,11 +68,10 @@
         </div>
       </div>
   
-  <!-- 텍스트 버튼 -->
+      <!-- 텍스트 버튼 -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    </div>
 
 
 
@@ -71,7 +79,7 @@
 
 
 
- <!-- eunhye -->
+    <!-- eunhye -->
  <div class="py-xl-5 overflow-hidden">
   <div class="ehcontainer flex-column pt-xl-3 my-xl-5" id="ehwave_love">
     <!-- 첫번째 -->
