@@ -378,7 +378,7 @@
 
 //메인 슬라이드 손
 .main_background {
-  background-image: url('https://pawfectwave.vercel.app/img/main/Main_background1.svg'); /* 배경 이미지 */
+  background-image: url('https://pawfectwave.vercel.app/img/main/Main_background1.jpg'); /* 배경 이미지 */
   background-size: cover; /* 전체 화면에 꽉 차게 */
   position: relative; /* 자식 요소의 절대 위치를 위한 기준 설정 */
   display: flex;
@@ -386,11 +386,15 @@
   align-items: center;
   height: 100vh; /* 전체 화면 높이 */
 }
+.hand, .dog1, .dog2 {
+  position: absolute;
+  z-index: 10; // 손과 강아지가 위에 보이도록 설정
+}
 
 .slide{
    
    &.slide2{
-    background-image: url('https://pawfectwave.vercel.app/img/main/Main_background1.svg'); /* 배경 이미지 */
+    background-image: url('https://pawfectwave.vercel.app/img/main/Main_background1.jpg'); /* 배경 이미지 */
    }
 }
 
@@ -409,38 +413,42 @@
   margin-left: 100px;
 }
 
-@keyframes showDog1 {
-  0% {
-      opacity: 0; /* 처음에는 보이지 않음 */
-      transform: translateY(-200px); /* 위에서 시작 */
-  }
-  50% {
-      opacity: 1; /* 완전히 보이게 */
-      transform: translateY(30px); /* 중간 위치 */
-  }
-  100% {
-      opacity: 0; /* 사라지게 설정 */
-      transform: translateY(30px);
-      display: none;
-  }
-}
+// @keyframes showDog1 {
+//   0% {
+//       opacity: 0; /* 처음에는 보이지 않음 */
+//       transform: translateY(-200px); /* 위에서 시작 */
+//   }
+//   50% {
+//       opacity: 1; /* 완전히 보이게 */
+//       transform: translateY(30px); /* 중간 위치 */
+//   }
+//   100% {
+//       opacity: 0; /* 사라지게 설정 */
+//       transform: translateY(30px);
+//       display: none;
+//   }
+// }
 
 @keyframes showDog2 {
   0% {
     opacity: 0;
     transform: translateY(-100px);
   }
+  50% {
+    opacity: 1; /* 완전히 보이게 */
+    transform: translateY(0);
+  }
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.dog1 {
-  animation: showDog1 3s ease-out forwards; /* 첫 번째 강아지 등장 */
-}
+// .dog1 {
+//   animation: showDog1 3s ease-out forwards; /* 첫 번째 강아지 등장 */
+// }
 
 .dog2 {
-  animation: showDog2 3s ease-out 3s forwards; /* 첫 번째 강아지 후 두 번째 강아지 등장 */
+  animation: showDog2 5s ease-out 5s forwards; /* 첫 번째 강아지 후 두 번째 강아지 등장 */
 }
 
 // 메인슬라이드 손 끝
@@ -451,10 +459,17 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  visibility: hidden; /* 초기에는 숨김 */
+  opacity: 0; /* 초기에는 보이지 않음 */
+  transition: opacity 0.5s ease; /* 부드러운 전환 효과 */
+}
+.swiper-slide {
+  display: none; // 슬라이드 초기 상태에서 숨김
 }
 
 /* 슬라이드 스타일 */
 .swiper-slide {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -465,13 +480,34 @@
   height: 100%; /* 슬라이드의 높이를 100%로 설정 */
 }
 
-/* 슬라이드 텍스트 */
+.slide-text-wrapper {
+  position: relative; /* 🔥 슬라이드 중앙에 정확히 배치 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+
 .slide-text {
-  font-size: 3rem;
+  
+  font-size: 100px;
   font-weight: bold;
-  z-index: 1; /* 텍스트가 이미지 위에 나오도록 */
-  position: relative;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 텍스트 가독성을 위해 그림자 추가 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 15px; /* 🔥 아래쪽 여백 추가 */
+  z-index: 1;
+}
+
+.slide-text-small {
+
+  font-size: 40px;
+  font-weight: normal;
+  z-index: 2;
+  text-align: center;
+  top:100px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* 이미지 스타일 */
@@ -488,13 +524,16 @@
   background: none; /* 배경 제거 */
   color: white; /* 텍스트 색상 설정 */
   border: none; /* 테두리 제거 */
-  width: 100px; /* 버튼의 너비 설정 (필요에 따라 조정) */
   height: 30px; /* 버튼의 높이 설정 (필요에 따라 조정) */
   font-size: 50px; /* 글자 크기 설정 */
   opacity: 0.5;
   position: absolute; /* 절대 위치 설정 */
   top: 50%; /* 수직 중앙 정렬 */
   transform: translateY(-50%); /* 수직 중앙 정렬을 위한 변환 */
+  z-index: 10; /* 이미지 위에 배치되도록 설정 */
+  width: auto; /* 텍스트 길이에 따라 조정 */
+  padding: 10px 20px; /* 버튼 안쪽 여백 추가 */
+
 }
 
 .swiper-button-prev::after,
@@ -502,12 +541,12 @@
   content: ''; /* 화살표 기호를 제거 */
 }
 .swiper-button-prev {
-  left: 10px;
+  left: 0;
   
 }
 
 .swiper-button-next {
-  right: 10px;
+  right: 0;
   
 }
 
