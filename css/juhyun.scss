@@ -291,106 +291,27 @@
 }
 }
 
-
-// #jy_swiper{
-// //메인슬라이드
-//   &.swiper-container {
-//     width: 100%;
-//     height: v100;
-//     margin: 0 auto;
-//     overflow: visible;
-//     position: relative;
-//     // margin-bottom: 100px;
-  
-//     .swiper-wrapper {
-//       display: flex;
-//       align-items: center;
-//     }
-  
-//     .swiper-slide {
-//       flex-shrink: 0;
-//       width: 1280px; // 메인 슬라이드 크기 고정
-//       height: 600px; // 슬라이드 높이 변경
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       overflow: hidden;
-//       transition: transform 0.5s ease, opacity 0.5s ease;
-//       border-radius: 20px;
-//       @media (max-width:1024px){
-//         height: 400px;
-//       }
-  
-//       img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: contain;
-//         opacity: 0.5;
-//         border-radius: 20px;
-//         transition: transform 0.5s ease, opacity 0.5s ease;
-//       }
-//     }
-  
-//     /* 메인 슬라이드 */
-//     .swiper-slide-active {
-//       transform: scale(1);
-//       opacity: 1;
-  
-//       img {
-//         transform: scale(1);
-//         opacity: 1;
-//       }
-//     }
-  
-//     /* 양 옆 슬라이드 */
-//     .swiper-slide-prev,
-//     .swiper-slide-next {
-//       // width: 1200px; // 중앙과 크기 조정
-//       // height: 670px; // 높이 동일하게 맞춤
-//       transform: scale(0.9); // 크기 줄이기
-//       opacity: 0.7;
-//     }
-//   }
-  
-//   /* 하단 막대 바 (페이지네이션) */
-//   .swiper-pagination {
-//     position: absolute;
-//     bottom: 20px;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     gap: 10px; // 간격 조정
-  
-//     .swiper-pagination-bullet {
-//       width: 50px;
-//       height: 8px;
-//       background-color: #e0e0e0;
-//       border-radius: 5px;
-//       cursor: pointer;
-//       transition: background-color 0.3s ease;
-//     }
-  
-//     .swiper-pagination-bullet-active {
-//       background-color: #008000; // 활성화된 막대 색상
-//     }
-//   }
-// }
-
 //메인 슬라이드 손
 #introbanner {
  
   width: 100%;
   height: 100vh;
-
+  z-index: 2; /* 스와이퍼보다 위에 배치 */
   display: flex;
   justify-content: center;
   align-items: center;
   transition: opacity 2s ease-in-out;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
 }
 #introbanner.fade-out {
   background: url("https://pawfectwave.vercel.app/img/main/Main_background1.jpg") no-repeat center center;
   background-size: cover;
   opacity: 0;
+  transform: translateY(0);
+  height: 0;
 }
 
 
@@ -402,6 +323,9 @@
 .swiper {
   position: relative;
   z-index: 1;
+  visibility: hidden; /* 초기에는 숨김 */
+    opacity: 0; /* 초기에는 보이지 않음 */
+    transition: opacity 1.5s ease-in-out; /* 부드러운 전환 효과 */
 }
 .main_background {
   background-image: url('https://pawfectwave.vercel.app/img/main/Main_background1.jpg'); /* 배경 이미지 */
@@ -436,22 +360,6 @@
   margin-left: 100px;
 }
 
-// @keyframes showDog1 {
-//   0% {
-//       opacity: 0; /* 처음에는 보이지 않음 */
-//       transform: translateY(-200px); /* 위에서 시작 */
-//   }
-//   50% {
-//       opacity: 1; /* 완전히 보이게 */
-//       transform: translateY(30px); /* 중간 위치 */
-//   }
-//   100% {
-//       opacity: 0; /* 사라지게 설정 */
-//       transform: translateY(30px);
-//       display: none;
-//   }
-// }
-
 @keyframes showDog2 {
   0% {
     opacity: 0;
@@ -466,9 +374,6 @@
     transform: translateY(0);
   }
 }
-// .dog1 {
-//   animation: showDog1 3s ease-out forwards; /* 첫 번째 강아지 등장 */
-// }
 
 .dog2 {
   z-index: 200;
@@ -485,11 +390,14 @@
   overflow: hidden;
   visibility: hidden; /* 초기에는 숨김 */
   opacity: 0; /* 초기에는 보이지 않음 */
-  transition: opacity 2s ease; /* 부드러운 전환 효과 */
+  transition: opacity 1.5s ease-in-out; /* 부드러운 전환 효과 */
+  z-index: 1; /* 다른 요소 위에 배치 */
 }
-// .swiper-slide {
-//   display: none; // 슬라이드 초기 상태에서 숨김
-// }
+#mainSwiper.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* 슬라이드 스타일 */
 .swiper-slide {
@@ -497,7 +405,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   text-align: center;
   color: white;
   width: 100%; /* 슬라이드의 너비를 100%로 설정 */
@@ -513,10 +420,12 @@
   width: 100%;
   height: auto;
 }
-
+.swiper-wrapper {
+  height: 100vh; /* 🔥 Swiper 높이 설정 */
+}
 
 .slide-text {
-  
+  line-height: 1.2; /* 줄 간격 조정 */
   font-size: 100px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -574,8 +483,7 @@
 .swiper-button-next {
   right: 0;
   
-}
-
+} 
 
 // 메인슬라이드 3개 추가 끝
 
