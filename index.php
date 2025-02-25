@@ -5,21 +5,68 @@
     include_once(ROOT_DIR.'/layout/top.php'); 
     ?>
 
-    
+   
     <div class="main_background" id="introbanner">
+    
         <img src="https://pawfectwave.vercel.app/img/main/hand_main.svg" alt="손 이미지" class="hand" />
-        <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 1" class="dog1" />
         <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 2" class="dog2" />
-    </div>
 
-    <div class="swiper" id="mainSwiper">
+        <div class="swiper">
+          <div class="slide slide1 active">
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background2.jpg" alt="배경1" />
+            <div class="center-text maintext">Love</div>
+            <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
+                <button class="left-btn">memory</button>
+                <button class="right-btn">greeting</button>
+           </div>
+        
+          <div class="slide slide2">
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background3.jpg" alt="배경2"/>
+            <div class="center-text maintext">greeting</div>
+            <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
+                <button class="left-btn">Love</button>
+                <button class="right-btn">memory</button>
+          </div>
+
+          <div class="slide slide3">
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background1.jpg" alt="배경3" />
+            <div class="center-text maintext">memory</div>
+            <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
+                <button class="left-btn">greeting</button>
+                <button class="right-btn">Love</button>
+          </div>
+        </div>
+    </div>
+        <!-- <div class="center-text maintext">Love</div>
+        <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
+            <button class="left-btn">memory</button>
+            <button class="right-btn">greeting</button>
+      </div>
+  
+       
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background2.jpg" alt="그리팅 이미지" class="greeting" />  
+              <div class="center-text maintext">greeting</div>
+              <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
+               <button class="left-btn">Love</button>
+               <button class="right-btn">memory</button>
+       
+
+   
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background3.jpg" alt="메모리 이미지" class="memory" />  
+            <div class="center-text maintext">memory</div>
+            <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
+              <button class="left-btn">greeting</button>
+              <button class="right-btn">Love</button>
+       -->
+     <!-- </div> -->
+    <!-- <div class="swiper" id="mainSwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide mainbg0 border p-5">
           <div class="slide-text">Love</div>
           <div class="slide-text-small">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
           <img src="https://pawfectwave.vercel.app/img/main/Main_background1.jpg" alt="러브 이미지" class="lovebg" />
-        </div>
-        <div class="swiper-slide mainbg1 border p-5">
+        </div> -->
+        <!-- <div class="swiper-slide mainbg1 border p-5">
           <div class="slide-text">Greetings</div>
           <div class="slide-text-small">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
           <img src="https://pawfectwave.vercel.app/img/main/Main_background2.jpg" alt="그리팅 이미지" class="greeting" />
@@ -28,16 +75,16 @@
           <div class="slide-text">Memories</div>
           <div class="slide-text-small">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
           <img src="https://pawfectwave.vercel.app/img/main/Main_background3.jpg" alt="메모리 이미지" class="memory" />
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
   
       <!-- 텍스트 버튼 -->
-      <div class="swiper-button-prev"></div>
+      <!-- <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-    </div>
+    </div> -->
 
 
-
+ 
 
     <!-- eunhye -->
  <div class="py-xl-5 overflow-hidden">

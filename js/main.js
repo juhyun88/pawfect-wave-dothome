@@ -1,55 +1,154 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const introbanner = document.getElementById('introbanner');
-  const swiperContainer = document.getElementById('mainSwiper');
+// let currentIndex = 0;
+// const slides = document.querySelectorAll('.slide');
+// const introbanner = document.getElementById('introbanner');
+// const swiper = document.querySelector('.swiper');
 
-  // 강아지 이미지 애니메이션
-  const dogImages = [introbanner.querySelector('.dog1'), introbanner.querySelector('.dog2')];
-  let currentImageIndex = 0;
+// // 슬라이드를 표시하는 함수
+// function showSlide(index) {
+//   slides.forEach((slide, i) => {
+//     const dogImage = slide.querySelector('.dog2');
+//     const handImage = slide.querySelector('.hand');
 
-  function animateDogs() {
-      if (currentImageIndex < dogImages.length) {
-          const dogImage = dogImages[currentImageIndex];
-          dogImage.style.transition = "opacity 1s ease-in-out";
-          dogImage.style.opacity = 1;
+//     slide.classList.remove('active');
+//     slide.classList.remove('visible'); // 전환 시마다 visible 클래스 제거
 
-          setTimeout(() => {
-              dogImage.style.opacity = 0; // 강아지 이미지 서서히 사라짐
-              currentImageIndex++;
+//     // 강아지 이미지 내려오기 애니메이션 및 손 이미지 처리
+//     if (i === index) {
+//       slide.classList.add('active');
+//       if (dogImage) {
+//         dogImage.style.transition = 'bottom 1s ease-in-out';
+//         dogImage.style.bottom = '10%'; // 강아지 이미지 내려오기 애니메이션
+//       }
+//       if (handImage) {
+//         handImage.style.transition = 'bottom 1s ease-in-out';
+//         handImage.style.bottom = '15%'; // 손 이미지 올라오기 애니메이션
+//       }
 
-              setTimeout(animateDogs, 1000); // 다음 이미지 애니메이션 시작
-          }, 2000); // 이미지가 보이는 시간
-      } else {
-          // 모든 강아지 이미지 애니메이션이 끝난 후 스와이퍼 작동
-          introbanner.style.transition = "opacity 1s ease-in-out"; // 배너 전환 효과
-          introbanner.style.opacity = 0; // 배너 서서히 사라짐
+//       // 강아지 애니메이션 끝난 후 슬라이드 전환
+//       if (dogImage) {
+//         dogImage.addEventListener('transitionend', () => {
+//           slide.classList.add('visible');
+//         }, { once: true });
+//       }
+//     } else {
+//       if (dogImage) {
+//         dogImage.style.bottom = '-200px'; // 다른 슬라이드는 강아지 이미지를 숨김
+//       }
+//       if (handImage) {
+//         handImage.style.bottom = '-150px'; // 다른 슬라이드는 손 이미지를 숨김
+//       }
+//     }
+//   });
+// }
 
-          // 스와이퍼 초기화
-          const swiper = new Swiper('#mainSwiper', {
-              navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-              },
-              loop: true,
-              autoplay: {
-                  delay: 3000, // 3초마다 자동 전환
-                  disableOnInteraction: false, // 사용자 상호작용 후에도 자동 전환 유지
-              },
-          });
+// // 슬라이드 전환 함수
+// function nextSlide() {
+//   currentIndex = (currentIndex + 1) % slides.length;
+//   showSlide(currentIndex);
+// }
 
-          // 스와이퍼가 서서히 나타나도록 설정
-          swiperContainer.style.opacity = 0; // 초기 투명도 설정
-          swiperContainer.classList.add('visible'); // 스와이퍼 보이기
+// // 이전 슬라이드로 전환 함수
+// function prevSlide() {
+//   currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+//   showSlide(currentIndex);
+// }
 
-          setTimeout(() => {
-              swiperContainer.style.transition = "opacity 1s ease-in-out"; // 스와이퍼 전환 효과
-              swiperContainer.style.opacity = 1; // 스와이퍼 서서히 나타남
-          }, 500); // 배너가 사라진 후 스와이퍼가 나타나기 시작
-          
-          setTimeout(() => {
-              introbanner.style.display = "none"; // 배너 숨기기
-          }, 2000); // 스와이퍼가 완전히 나타난 후 배너 숨기기
-      }
-  }
+// // 버튼 클릭 이벤트 처리
+// document.querySelectorAll('.left-btn').forEach(button => {
+//   button.addEventListener('click', () => {
+//     prevSlide();
+//   });
+// });
 
-  animateDogs(); // 강아지 애니메이션 시작
+// document.querySelectorAll('.right-btn').forEach(button => {
+//   button.addEventListener('click', () => {
+//     nextSlide();
+//   });
+// });
+
+// // 초기 슬라이드 표시
+// showSlide(currentIndex);
+
+// // 자동 슬라이드 전환
+// setInterval(nextSlide, 5000); // 5초마다 자동으로 슬라이드 전환
+
+// console.log("Current Index: ", currentIndex);
+// console.log("Dog Image Bottom: ", dogImage.style.bottom);
+// dogImage.addEventListener('transitionend', () => {
+//     console.log('Transition ended');
+//     slide.classList.add('visible');
+//   });
+
+//   let currentIndex = 0;
+// const slides = document.querySelectorAll('.slide');
+// const introbanner = document.getElementById('introbanner');
+// const swiper = document.querySelector('.swiper');
+
+// // 슬라이드를 표시하는 함수
+// function showSlide(index) {
+//   slides.forEach((slide, i) => {
+//     const dogImage = slide.querySelector('.dog2');
+//     const handImage = slide.querySelector('.hand');
+
+//     slide.classList.remove('active');
+//     slide.classList.remove('visible'); // 전환 시마다 visible 클래스 제거
+
+//     // 강아지 이미지 내려오기 애니메이션 및 손 이미지 처리
+//     if (i === index) {
+//       slide.classList.add('active');
+//       if (dogImage) {
+//         dogImage.style.transition = 'bottom 1s ease-in-out';
+//         dogImage.style.bottom = '10%'; // 강아지 이미지 내려오기 애니메이션
+//       }
+//       if (handImage) {
+//         handImage.style.transition = 'bottom 1s ease-in-out';
+//         handImage.style.bottom = '15%'; // 손 이미지 올라오기 애니메이션
+//       }
+
+//       // 강아지 애니메이션 끝난 후 슬라이드 전환
+//       if (dogImage) {
+//         dogImage.addEventListener('transitionend', () => {
+//           slide.classList.add('visible');
+//         }, { once: true });
+//       }
+//     } else {
+//       if (dogImage) {
+//         dogImage.style.bottom = '-200px'; // 다른 슬라이드는 강아지 이미지를 숨김
+//       }
+//       if (handImage) {
+//         handImage.style.bottom = '-150px'; // 다른 슬라이드는 손 이미지를 숨김
+//       }
+//     }
+//   });
+// }
+
+// 슬라이드 전환 함수
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+// 이전 슬라이드로 전환 함수
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+}
+
+// 버튼 클릭 이벤트 처리
+document.querySelectorAll('.left-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    prevSlide();
+  });
 });
+
+document.querySelectorAll('.right-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    nextSlide();
+  });
+});
+
+// 초기 슬라이드 표시
+showSlide(currentIndex);
+
+// 자동 슬라이드 전환
+setInterval(nextSlide, 5000); // 5초마다 자동으로 슬라이드 전환
