@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="/css/soyeong.min.css">
     <link rel="stylesheet" href="/css/hyuna.min.css">
     <link rel="stylesheet" href="/css/juhyun.min.css">
+    <link rel="stylesheet" href="/css/pagecss/reservation.min.css">
 
 </head>
 <body class="overflow-x-hidden">
@@ -152,10 +153,14 @@
 
         <ul class="reservation d-flex justify-content-end align-items-center order-2 mb-0 p-0 ms-auto">
           <li><a href=""><i class="bi bi-geo-alt fs-4 text-white me-3"></i></a></li>
-          <li class="text-nowrap"><a href=""><button class="reservation-button"><img src="https://pawfectwave.vercel.app/img/svg/calendar.svg" alt="">
+          <li class="text-nowrap"><a href="/page/reservation.php"><button class="reservation-button"><img src="https://pawfectwave.vercel.app/img/svg/calendar.svg" alt="">
             <span>장례 예약</span></button></a>
           </li>
         </ul>
+
+        
+
+        
   
 
     </header>

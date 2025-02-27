@@ -1,4 +1,6 @@
-<?php include_once("../layout/top.php"); ?>
+<?php 
+include_once("../config.php");
+include_once("../layout/top.php"); ?>
 
 <html lang="ko">
 <head>
@@ -25,7 +27,7 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <section class="vh-100 mt-16 px-6">
+    <section class="d-flex flex-column justify-content-start align-items-center px-6" style="min-height: 100vh; padding-top: 150px;">
         <div class="faqwrap text-center" style="margin-top: 150px;">
             <h1 class="faqtext font-semibold">FAQ</h1>
             <h2 class="text-lg mt-3">자주 문의하는 질문에 대한 답변을 확인하실 수 있습니다.</h2>

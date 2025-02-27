@@ -10,32 +10,34 @@
     
         <img src="https://pawfectwave.vercel.app/img/main/hand_main.svg" alt="손 이미지" class="hand" />
         <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 2" class="dog2" />
-
+   
         <div class="swiper">
           <div class="slide slide1 active">
-          <img src="https://pawfectwave.vercel.app/img/main/Main_background2.jpg" alt="배경1" />
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background1.jpg" alt="배경1" />
             <div class="center-text maintext">Love</div>
             <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
                 <button class="left-btn">memory</button>
                 <button class="right-btn">greeting</button>
            </div>
-        
+       
           <div class="slide slide2">
-          <img src="https://pawfectwave.vercel.app/img/main/Main_background3.jpg" alt="배경2"/>
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background2.jpg" alt="배경2"/>
             <div class="center-text maintext">greeting</div>
             <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
                 <button class="left-btn">Love</button>
                 <button class="right-btn">memory</button>
           </div>
-
+        
           <div class="slide slide3">
-          <img src="https://pawfectwave.vercel.app/img/main/Main_background1.jpg" alt="배경3" />
+          <img src="https://pawfectwave.vercel.app/img/main/Main_background3.jpg" alt="배경3" />
             <div class="center-text maintext">memory</div>
             <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
                 <button class="left-btn">greeting</button>
                 <button class="right-btn">Love</button>
+        
           </div>
         </div>
+        <button class="circle-button"><a href="다른페이지.html">추모관</a></button>
     </div>
         <!-- <div class="center-text maintext">Love</div>
         <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
