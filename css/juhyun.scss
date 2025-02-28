@@ -325,10 +325,6 @@
   color: white; /* 글자색 */
 }
 .contentSection{
-  width: 100%;  // 원하는 너비
-  height: 300px; // 원하는 높이
-  overflow: hidden; // 잘라내기
-  position: relative; // 자식 요소의 위치를 상대적으로 설정
 }
 
 
@@ -868,9 +864,7 @@ padding: 60px 0;
 }
 }
 .faqwrap {
-  margin-top: 200px; /* 상단에서 충분히 떨어지도록 설정 */
-  width: 100px;
-  max-width: 1200px;
+
 }
 html, body {
   height: 100%;

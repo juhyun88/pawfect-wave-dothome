@@ -2,13 +2,7 @@
 include_once("../config.php");
 include_once("../layout/top.php"); 
 ?>
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         function filterFAQ(category) {
             const items = document.querySelectorAll(".faq-item");
@@ -21,15 +15,10 @@ include_once("../layout/top.php");
             });
         }
     </script>
-    <style>
-        html, body {
-            height: 100%;
-        }
-    </style>
-</head>
-<body class="bg-gray-100">
-    <section class="d-flex flex-column justify-content-start align-items-center px-6" style="min-height: 100vh; padding-top: 150px;">
-        <div class="faqwrap text-center" style="margin-top: 150px;">
+
+
+    <section class="d-flex flex-column justify-content-start align-items-center px-6" >
+        <div class="faqwrap text-center" >
             <h1 class="faqtext font-semibold">FAQ</h1>
             <h2 class="text-lg mt-3">자주 문의하는 질문에 대한 답변을 확인하실 수 있습니다.</h2>
             <div class="servicecategory flex justify-center mt-5">
@@ -92,7 +81,6 @@ include_once("../layout/top.php");
             </div>
         </div>
     </section>
-</body>
-</html>
+
 
 <?php include_once("../layout/bottom.php"); ?>

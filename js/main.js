@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiperElement = document.querySelector('.swiper');
     swiperElement.classList.add('visible');
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('#introbanner .swiper', {
       loop: true, // 무한 루프 활성화
       effect: "fade",
       autoplay: {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
       observeParents: true, // 부모 요소 변경 감지
     });
 
-    swiper.slideTo(0);
-    swiper.update();
+    // swiper.slideTo(0);
+    // swiper.update();
   }, 6000);
 });
