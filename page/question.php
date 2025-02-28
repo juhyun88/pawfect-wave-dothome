@@ -1,7 +1,8 @@
 <?php 
 include_once("../config.php");
-include_once("../layout/top.php"); ?>
-
+include_once("../layout/top.php"); 
+?>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -54,86 +55,43 @@ include_once("../layout/top.php"); ?>
 
         <div class="container mt-5">
             <div class="faq-section">
-                <div class="faq-item 기초수습">
-                    <div class="faq-title d-flex justify-content-between align-items-center">
-                        <span class="category">기초수습</span>
-                        <span class="question">AVERE 이용하려면 어떻게 해야 해요?</span>
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="faq-content">
-                        <p>AVERE 이용을 위해 회원가입 후 로그인을 진행하세요.</p>
-                    </div>
-                </div>
+                <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+                    <thead>
+                        <tr class="text-left bg-gray-200">
+                            <th class="px-4 py-2 border-b">제목</th>
+                            <th class="px-4 py-2 border-b">작성자</th>
+                            <th class="px-4 py-2 border-b">작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            try {
+                                // DB 연결
+                                $pdo = new PDO('mysql:host=localhost;dbname=pawfectwave;charset=utf8mb4', 'pawfectwave', 'js241219!');
+                                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                                
+                                // 게시판 데이터 가져오기
+                                $sql = "SELECT * FROM board ORDER BY created_at DESC"; 
+                                $stmt = $pdo->query($sql);
+                                $board_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-                <div class="faq-item 장례서비스">
-                    <div class="faq-title d-flex justify-content-between align-items-center">
-                        <span class="category">장례서비스</span>
-                        <span class="question">AVERE 가 뭐예요?</span>
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="faq-content">
-                        <p>AVERE는 온라인 추모관 서비스입니다.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item 부가서비스">
-                    <div class="faq-title d-flex justify-content-between align-items-center">
-                        <span class="category">부가 서비스</span>
-                        <span class="question">온라인 추모관'걸어온'2개 만들고 싶은데 가능한가요?</span>
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="faq-content">
-                        <p>AVERE는 온라인 추모관 서비스입니다.</p>
-                    </div>
-                </div>
+                                // 각 게시물을 출력
+                                foreach ($board_list as $board) {
+                                    echo "<tr class='author " . htmlspecialchars($board['author']) . "'>";
+                                    echo "<td class='title px-4 py-2'><a href='/page/viewquestion.php?id=" . $board['id'] . "' class='text-blue-500 hover:underline'>" . htmlspecialchars($board['title']) . "</a></td>";
+                                    echo "<td class='writer px-4 py-2'>" . htmlspecialchars($board['author']) . "</td>";
+                                    echo "<td class='date px-4 py-2'>" . $board['created_at'] . "</td>";
+                                    echo "</tr>";
+                                }
+                            } catch (PDOException $e) {
+                                die("Query Failed: " . $e->getMessage());
+                            }
+                        ?>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div class="mt-8">
-            <nav aria-label="Page navigation">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">&#60;</a></li>
-                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">&#62;</a></li>
-                </ul>
-            </nav>
-        </div>
     </section>
-
-       <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const questions = document.querySelectorAll(".faq-title");
-
-            questions.forEach(function(question) {
-                question.addEventListener("click", function() {
-                    const content = this.nextElementSibling;
-                    const arrow = this.querySelector('.arrow');
-
-                    // 클릭된 항목의 답변을 토글 (열거나 닫기)
-                    content.style.display = content.style.display === "block" ? "none" : "block";
-                    
-                    // 화살표 회전
-                    arrow.style.transform = content.style.display === "block" ? 'rotate(135deg)' : 'rotate(-50deg)';
-                    
-                    // 다른 항목들 닫기
-                    questions.forEach(function(otherQuestion) {
-                        if (otherQuestion !== question) {
-                            otherQuestion.nextElementSibling.style.display = "none";
-                            otherQuestion.querySelector('.arrow').style.transform = 'rotate(-45deg)';
-                        }
-                    });
-
-                    return false;  // 기본 동작을 막기
-                });
-            });
-
-            // 첫 번째 항목 자동으로 트리거 (첫 번째 항목이 열리도록)
-            // questions[0].click();
-        });
-    </script>
-  
 </body>
 </html>
 

@@ -13,6 +13,7 @@
     <meta property="og:title" content="powfectwave" /> 
     <meta property="og:description" content="반려동물의 마지막을 함께하는 반려동물 장례 서비스 플랫폼" /> 
     <meta property="og:image" content="https://pawfectwave.vercel.app/img/svg/oq.svg" />
+    
 
     <title>PawpectWave</title>
      <!-- 파비콘 -->
@@ -165,5 +166,5 @@
 
     </header>
     <?php if(!defined('_INDEX_')){ // 서브페이지에서만 등장 ?>
-     <div class='contentSection' style='background:url(https://<?php echo IMG_URL; ?>/img/banner/memorial_tableimage.jpg) no-repeat center'>
-    <? } ?>
+    <div class='contentSection' style='background:url(https://<?php echo IMG_URL; ?>/img/banner/memorial_tableimage.jpg) no-repeat center; background-size: cover; padding-top: 300px;'>
+<?php } ?>
