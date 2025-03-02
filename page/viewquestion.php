@@ -3,17 +3,20 @@
 require_once '../config.php';
 
 // `wr_id` 값이 전달되지 않았다면 경고창 띄우고 list.php로 이동
-if (!isset($_GET['author'])) {
+if (!isset($_GET['id'])) {
     echo "<script>alert('잘못된 접근입니다.'); location.href='qustion.php';</script>";
     exit;
 }
 
-$wr_id = $_GET['author'];
+$id = $_GET['id'];
 
 try {
-    $sql = "SELECT title, content, created_at, updated_at FROM board WHERE author = :author";
+    $pdo = new PDO('mysql:host=localhost;dbname=pawfectwave;charset=utf8mb4', 'pawfectwave', 'js241219!');
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql = "SELECT author, title, content, created_at, updated_at FROM board WHERE id = :id";
     $stmt = $pdo->prepare($sql);
-    $stmt->bindParam(':author', $author, PDO::PARAM_INT);
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
     $stmt->execute();
 
     $board = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -32,5 +35,6 @@ try {
 
 ?>
 
-<a href="/page/qustion.php">목록</a>
-<a href="/page/writequstion.php?w=update">수정</a>
+<a href="/page/question.php">목록</a>
+<a href="/page/writequestion.php?w=update&id=<?= urlencode($_GET['id']) ?>">수정</a>
+<!-- <a href="/page/writequestion.php">글쓰기</a> -->

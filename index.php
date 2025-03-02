@@ -10,7 +10,7 @@
     
         <img src="https://pawfectwave.vercel.app/img/main/hand_main.svg" alt="손 이미지" class="hand" />
         <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 2" class="dog2" />
-   
+        <button class="circle-button"><a href="/page/service.php">추모관 바로가기</a></button>
         <div class="swiper">
           <div class="swiper-wrapper active">
               <div class="swiper-slide">
@@ -37,7 +37,7 @@
                     <button class="right-btn">Love</button>        
               </div>
           </div>
-          <button class="circle-button"><a href="/page/service.php">추모관 바로가기</a></button>
+ 
         </div>
     </div>
         <!-- <div class="center-text maintext">Love</div>
