@@ -9,7 +9,7 @@
 
 @include generate-opacity(0, 10, 0.1);
 
-  
+
 
 .title {
     &.titlefont {
@@ -19,6 +19,8 @@
       font-style: normal;
       // font-weight: 700;
       line-height: normal;
+    
+      
     }
   }
   

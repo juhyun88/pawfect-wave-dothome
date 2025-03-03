@@ -16,7 +16,8 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
-  text-align: center;
+  font-size: 15px;
+  text-align: start;
 }
 
 /* 버튼 스타일 */
@@ -43,4 +44,4 @@
 select, button {
   padding: 10px;
   margin: 5px;
-}
+}/*# sourceMappingURL=reservation.css.map */

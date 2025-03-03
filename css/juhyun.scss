@@ -20,6 +20,11 @@
   }
   &.scrollup{
     #hd{
+      transform: translateY(0)
+    }
+  }
+  &.scrolldown{
+    #hd{
       transform: translateY(-100%)
     }
   }
@@ -324,8 +329,6 @@
   text-decoration: none;
   color: white; /* 글자색 */
 }
-.contentSection{
-}
 
 
 //메인 슬라이드 손
@@ -408,12 +411,15 @@
 }
 .swiper {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100vw !important;
+  height: 100vh !important;
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
   transition: opacity 1s ease-in-out;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .swiper.visible {
@@ -421,19 +427,38 @@
   visibility: visible;
 }
 
-.slide {
-  position: absolute;
+.swiper-slide {
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  color: white;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 1s ease-in-out, visibility 0s 1s;
 }
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  transform: scale(0.9); 
+}
+.swiper-fade .swiper-slide{
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+
+}
+// .swiper-slide {
+//   position: absolute;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   color: white;
+//   width: 100%;
+//   height: 100%;
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: opacity 1s ease-in-out, visibility 0s 1s;
+// }
 
 .slide.active {
   opacity: 1;
@@ -823,10 +848,6 @@ padding: 60px 0;
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-.faqtext{
-  font-size: 2.5rem;
-}
-
 @media only screen and (min-width: 768px){
   .faqwrap {
   max-width: 1200px;
@@ -863,9 +884,7 @@ padding: 60px 0;
     margin-top: 0;
 }
 }
-.faqwrap {
 
-}
 html, body {
   height: 100%;
   margin: 0;
@@ -961,4 +980,3 @@ section {
   background-color: #006838;
   color: white;
 }
-

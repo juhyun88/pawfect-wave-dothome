@@ -168,7 +168,7 @@
     <?php if(!defined('_INDEX_')){ // 서브페이지에서만 등장 ?>
     <div class='contentSection' >
       <div class="bannerimg faqimg d-flex justify-content-center flex-column align-items-center" style='background-image:url(https://<?php echo IMG_URL; ?>/img/banner/memorial_tableimage.jpg)'>
-           <h2 class='mb-4'>FAQ</h2>
-           <p class='mb-0'>무엇이든 물어보세요.</p>
+           <h2 class='mb-5 '></h2>
+           <p class='mb-5'></p>
       </div>
 <?php } ?>

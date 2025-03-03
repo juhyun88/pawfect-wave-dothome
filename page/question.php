@@ -9,7 +9,7 @@ include_once("../layout/top.php");
             console.log("items :: ", items)
             items.forEach(item => {
                 if (category === "전체" || item.classList.contains(category)) {
-                    item.style.display = "block";
+                    item.style.display = "table-row";
                 } else {
                     item.style.display = "none";
                 }
@@ -45,10 +45,11 @@ include_once("../layout/top.php");
 
         <div class="container mt-5">
             <div class="faq-section">
-                <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+                <table class="table table-striped table-hover table-bordered bg-white shadow-md rounded-lg overflow-hidden">
                     <thead>
-                        <tr class="text-left bg-gray-200">
-                            <th class="px-4 py-2 border-b">제목</th>
+                        <tr class="text-center bg-gray-200">
+                            
+                            <th class="px-4 py-2 border-b ">제목</th>
                             <th class="px-4 py-2 border-b">작성자</th>
                             <th class="px-4 py-2 border-b">작성일</th>
                         </tr>
@@ -68,10 +69,10 @@ include_once("../layout/top.php");
 
                                 // 각 게시물을 출력
                                 foreach ($board_list as $board) {
-                                    echo "<tr class='author faq-item " . htmlspecialchars($board['category']) . "'>";
-                                    echo "<td class='title px-4 py-2'><a href='/page/viewquestion.php?id=" . $board['id'] . "' class='text-blue-500 hover:underline'>" . htmlspecialchars($board['title']) . "</a></td>";
-                                    echo "<td class='writer px-4 py-2'>" . htmlspecialchars($board['author']) . "</td>";
-                                    echo "<td class='date px-4 py-2'>" . $board['created_at'] . "</td>";
+                                    echo "<tr class='author faq-item text-center " . htmlspecialchars($board['category']) . "'>";
+                                    echo "<td class='title px-4 py-2 text-center'><a href='/page/viewquestion.php?id=" . $board['id'] . "' class='text-blue-500 hover:underline'>" . htmlspecialchars($board['title']) . "</a></td>";
+                                    echo "<td class='writer px-4 py-2 text-center'>" . htmlspecialchars($board['author']) . "</td>"; // 중앙 정렬
+                                    echo "<td class='date px-4 py-2 text-center'>" . $board['created_at'] . "</td>"; // 중앙 정렬
                                     echo "</tr>";
                                 }
                             } catch (PDOException $e) {
@@ -83,6 +84,5 @@ include_once("../layout/top.php");
             </div>
         </div>
     </section>
-
 
 <?php include_once("../layout/bottom.php"); ?>

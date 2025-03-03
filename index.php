@@ -11,17 +11,18 @@
         <img src="https://pawfectwave.vercel.app/img/main/hand_main.svg" alt="손 이미지" class="hand" />
         <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 2" class="dog2" />
         <button class="circle-button"><a href="/page/service.php">추모관 바로가기</a></button>
+  
         <div class="swiper">
           <div class="swiper-wrapper active">
-              <div class="swiper-slide">
-              <img src="https://pawfectwave.vercel.app/img/main/Main_background1.jpg" alt="배경2"/>
+              <div class="swiper-slide d-flex justify-content-center align-items-center top-0 start-0 ">
+              <img src="https://pawfectwave.vercel.app/img/main/Main_background1.jpg" alt="배경1"class="img-fluid w-100 h-100"/>
                   <div class="center-text maintext">Love</div>
                   <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
                   <button class="left-btn">memory</button>
                   <button class="right-btn">greeting</button>
               </div>       
-              <div class="swiper-slide">
-                    <img src="https://pawfectwave.vercel.app/img/main/Main_background2.jpg" alt="배경2"/>
+              <div class="swiper-slide d-flex justify-content-center align-items-center top-0 start-0 ">
+                    <img src="https://pawfectwave.vercel.app/img/main/Main_background2.jpg" alt="배경2" class="img-fluid w-100 h-100"/>
                     <div class="center-text maintext">greeting</div>
                     <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
                     <button class="left-btn">Love</button>
@@ -29,8 +30,8 @@
               </div>
         
           
-              <div class="swiper-slide">
-                    <img src="https://pawfectwave.vercel.app/img/main/Main_background3.jpg" alt="배경3" />
+              <div class="swiper-slide d-flex justify-content-center align-items-center top-0 start-0">
+                    <img src="https://pawfectwave.vercel.app/img/main/Main_background3.jpg" alt="배경3" class="img-fluid w-100 h-100"/>
                     <div class="center-text maintext">memory</div>
                     <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
                     <button class="left-btn">greeting</button>
