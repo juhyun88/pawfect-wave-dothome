@@ -27,11 +27,9 @@ if($conn->connect_error){
 
 $sql="INSERT INTO user(author, title, content, created_at, updated_at) VALUES(?, ?, ?, ?, ?)";
 
-$author = isset($_POST['author']) ? trim($_POST['author']) : ''; // 'author'가 없으면 빈 문자열로 설정
+$author = isset($_POST['author']) ? trim($_POST['author']) : '';
 $title = isset($_POST['title']) ? trim($_POST['title']) : '';
 $content = isset($_POST['content']) ? trim($_POST['content']) : '';
-$created_at = date('Y-m-d H:i:s');  // 현재 시간으로 생성
-$updated_at = $created_at;          // 처음과 업데이트된 시간은 동일하게 설정
-
-
+$created_at = date('Y-m-d H:i:s');  
+$updated_at = $created_at;         
 ?>

@@ -51,7 +51,12 @@
   src: url(https://framerusercontent.com/assets/P5UwaHAZrdb3qbU8Fs6Qz3XIbo.woff2);
   font-display: swap
 }
-
+@font-face {
+  font-family: 'MangoDdobak-B';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 :root{
   --MainBrownLight : #A97D5E;
   --Primery : #006838;

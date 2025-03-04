@@ -1,57 +1,33 @@
 
-<?php
-    // if(isset($_GET['w'])){
-    //     echo "<botton>글수정</button>";
-    // }
-    // else{
-    //     echo "<botton>글쓰기</button>";
-    // }
-?>
-
-<?php
-
-require_once '../config.php';
-
-// `wr_id` 값이 전달되지 않았다면 경고창 띄우고 list.php로 이동
-if (!isset($_GET['id'])) {
-    echo "<script>alert('잘못된 접근입니다.'); location.href='qustion.php';</script>";
-    exit;
-}
-
-$id = $_GET['id'];
-
-try {
-    $pdo = new PDO('mysql:host=localhost;dbname=pawfectwave;charset=utf8mb4', 'pawfectwave', 'js241219!');
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    $sql = "SELECT author, title, content, created_at, updated_at FROM board WHERE id = :id";
-    $stmt = $pdo->prepare($sql);
-    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-    $stmt->execute();
-
-    $board = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    if ($board) {
-        echo '<input id="update_title" type="text" value="' . htmlspecialchars($board['title'], ENT_QUOTES) . '">';
-        echo "<p>작성자: " . htmlspecialchars($board['author']) . "</p>";
-        echo '<textarea id="update_content">' . nl2br(htmlspecialchars($board['content'])) . "</textarea>";
-
-        if(isset($_GET['w'])){
-            echo "<botton>글수정</button>";
-        }
-        else{
-            echo "<botton>글쓰기</button>";
-        }
-    } else {
-        echo "<script>alert('게시글을 찾을 수 없습니다.'); location.href='qustion.php';</script>";
-        exit;
-    }
-} catch (PDOException $e) {
-    die("Query Failed: " . $e->getMessage());
-}
-
-
-?>
-
-
-<a href="/page/question.php">목록</a>
+<div class="modal fade" id="writeModal" tabindex="-1" aria-labelledby="writeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="writeModalLabel">Q&A 글쓰기</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="faqForm" action="submit_faq.php" method="POST">
+          <div class="mb-3">
+            <label for="title" class="form-label">제목</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">카테고리</label>
+            <select class="form-select" id="category" name="category" required>
+              <option value="a">기초수습</option>
+              <option value="b">장례서비스</option>
+              <option value="c">부가 서비스</option>
+              <option value="d">기타</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="content" class="form-label">내용</label>
+            <textarea class="form-control" id="content" name="content" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">제출</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

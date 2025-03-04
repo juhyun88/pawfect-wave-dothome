@@ -95,21 +95,23 @@
         <div class="topmeun d-flex justify-content-center align-items-center order-1 me-auto ">
           <ul class="d1ul">
             <li class="d1li position-relative text-center"> 
-              <a href="" class="d1a d-flex justify-content-center align-items-center">장례절차</a>
+              <a href="" class="d1a d-flex justify-content-center align-items-center">브랜드</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                    <a href="/page/procedures.php">스톤 장례</a></li>
+                    <a href="/page/procedures.php">브랜드 Story</a></li>
                   <li class="d2li">
-                    <a href="/page/procedures.php">일반 장례</a></li>
+                    <a href="/page/procedures.php">기부캠페인</a></li>
                 </ul>
             </li>
             <li class="d1li position-relative text-center"> 
-              <a href="" class="d1a d-flex justify-content-center align-items-center">장례비용</a>
+              <a href="" class="d1a d-flex justify-content-center align-items-center">장례서비스</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                    <a href="/page/price.php">스톤 장례</a></li>
+                  <a href="/page/price.php">장례절차</a></li>
                   <li class="d2li">
-                    <a href="/page/price.php">일반 장례</a></li>
+                    <a href="/page/price.php">일반장례 비용</a></li>
+                  <li class="d2li">
+                    <a href="/page/price.php">스톤 장례 비용</a></li>
                   
                 </ul>
             </li>

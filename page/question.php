@@ -18,7 +18,7 @@ include_once("../layout/top.php");
     </script>
 
 
-    <section class="d-flex flex-column justify-content-start align-items-center px-6" >
+    <section class="d-flex flex-column justify-content-start align-items-center px-6 mt-5" >
         <div class="faqwrap text-center" >
             <h1 class="faqtext font-semibold">FAQ</h1>
             <h2 class="text-lg mt-3">자주 문의하는 질문에 대한 답변을 확인하실 수 있습니다.</h2>
@@ -81,7 +81,44 @@ include_once("../layout/top.php");
                         ?>
                     </tbody>
                 </table>
+                    <div class="d-flex justify-content-end"style="width: 100%;">
+                    <button class="btn btn-success ml-auto" data-bs-toggle="modal" data-bs-target="#writeModal">글쓰기</button>
+                    </div>
             </div>
+        
+            
+        </div>
+        <div class="modal fade" id="writeModal" tabindex="-1" aria-labelledby="writeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="writeModalLabel">Q&A 글쓰기</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="faqForm" action="submit_faq.php" method="POST">
+                <div class="mb-3">
+                    <label for="title" class="form-label">제목</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="category" class="form-label">카테고리</label>
+                    <select class="form-select" id="category" name="category" required>
+                    <option value="a">기초수습</option>
+                    <option value="b">장례서비스</option>
+                    <option value="c">부가 서비스</option>
+                    <option value="d">기타</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label">내용</label>
+                    <textarea class="form-control" id="content" name="content" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">제출</button>
+                </form>
+            </div>
+            </div>
+        </div>
         </div>
     </section>
 

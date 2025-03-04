@@ -16,27 +16,117 @@
     width: 80%;
     max-width: 600px;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
     font-size: 15px;
-    text-align: start;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#date-picker {
+    display: none;
+}
+.flatpickr-calendar {
+    display: block !important;
+    position: relative !important;
+    left: 0 !important;
+}
+.selected-date{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.time-button-group {
+    margin: 10px 0;
 }
 
+.time-dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.time-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #006838;
+    color: white;
+    border-radius: 5px;
+    min-width: 120px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.dropdown-content button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+}
+.dropdown-content button:hover {
+    background-color: #f1f1f1;
+}
+
+.time-dropdown.active .dropdown-content {
+    display: block;
+}
+
+.time-button.active {
+    background-color: #0056b3;
+}
+#time-select {
+    display: none;
+    margin-top: 10px;
+}
+.flatpickr-day.selected{
+    background-color: #006838;
+}
+.nextbutton{
+    color: black;
+    border-radius: 2px;
+    width: 300px;
+    border: none;
+}
+textarea{
+    width: 500px;
+    height: 200px;
+    background-color: #e6e6e6;
+    resize: none;  /* 사용자가 크기를 조정하지 못하도록 설정 */
+    white-space: pre-wrap;  /* 줄 바꿈을 허용 */
+    border: none;
+}
+.bi{
+    color: #006838;
+}
 /* 버튼 스타일 */
 .button-group {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
+    color: white;
 }
 
 .button-group button {
-    padding: 10px 20px;
+    padding: 0 20px;
     border: none;
-    background-color: #555;
+    background-color: #006838;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 50px;
 }
 
 .calendar {

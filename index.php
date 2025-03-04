@@ -41,54 +41,7 @@
  
         </div>
     </div>
-        <!-- <div class="center-text maintext">Love</div>
-        <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
-            <button class="left-btn">memory</button>
-            <button class="right-btn">greeting</button>
-      </div>
-  
        
-          <img src="https://pawfectwave.vercel.app/img/main/Main_background2.jpg" alt="그리팅 이미지" class="greeting" />  
-              <div class="center-text maintext">greeting</div>
-              <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
-               <button class="left-btn">Love</button>
-               <button class="right-btn">memory</button>
-       
-
-   
-          <img src="https://pawfectwave.vercel.app/img/main/Main_background3.jpg" alt="메모리 이미지" class="memory" />  
-            <div class="center-text maintext">memory</div>
-            <div class="center-text subtext">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
-              <button class="left-btn">greeting</button>
-              <button class="right-btn">Love</button>
-       -->
-     <!-- </div> -->
-    <!-- <div class="swiper" id="mainSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide mainbg0 border p-5">
-          <div class="slide-text">Love</div>
-          <div class="slide-text-small">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
-          <img src="https://pawfectwave.vercel.app/img/main/Main_background1.jpg" alt="러브 이미지" class="lovebg" />
-        </div> -->
-        <!-- <div class="swiper-slide mainbg1 border p-5">
-          <div class="slide-text">Greetings</div>
-          <div class="slide-text-small">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
-          <img src="https://pawfectwave.vercel.app/img/main/Main_background2.jpg" alt="그리팅 이미지" class="greeting" />
-        </div>
-        <div class="swiper-slide mainbg2 border p-5">
-          <div class="slide-text">Memories</div>
-          <div class="slide-text-small">사라지지 않는 사랑, 기억은 영원히 남습니다</div>
-          <img src="https://pawfectwave.vercel.app/img/main/Main_background3.jpg" alt="메모리 이미지" class="memory" />
-        </div> -->
-      <!-- </div> -->
-  
-      <!-- 텍스트 버튼 -->
-      <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div> -->
-
-
- 
 
     <!-- eunhye -->
  <div class="py-xl-5 overflow-hidden">
@@ -284,8 +237,8 @@
         <h2>Petros Care</h2>
         <h1>펫로스 케어</h1>
         <p>펫로스 증후군으로 인한 마음의 치유가<br>필요한 보호자님을 위한 케어 입니다.</p>
-        <button class="btn_petros my-4" onclick="window.location.href='https://www.youtube.com'">< 유튜브 이동하기</button>
-        <button class="btn_petros my-4" onclick="window.location.href='/page/petlose.php'">자세히보기 ></button>
+        <button class="btn_petros my-4" onclick="window.location.href='https://www.youtube.com'"><i class="bi bi-arrow-left"></i> 유튜브 이동하기</button>
+        <button class="btn_petros my-4" onclick="window.location.href='/page/petlose.php'">자세히보기 <i class="bi bi-arrow-right"></i></button>
       </div>
     </div>
   <div class="row g-3 align-items-center justify-content-center flex-row-reverse mt-5">
@@ -306,8 +259,8 @@
       <h2>Pawfect & Pet Wave</h2>
       <h1>파우펙트 & 펫 웨이브</h1>
       <p>생애의 모든 순간을 함께하는, 당신의 반려동물 케어 파트너<br>동물의료센터와 함께해 건강 관리부터 마지막 순간까지 함께<br>해드립니다.</p>
-      <button class="btn_petros" onclick="window.location.href='/page/hospital.php'">< 자세히보기</button>
-      <button class="btn_petros" onclick="window.location.href='http://www.youtube.com'">유튜브 이동하기 ></button>
+      <button class="btn_petros" onclick="window.location.href='/page/hospital.php'"><i class="bi bi-arrow-left"></i> 자세히보기</button>
+      <button class="btn_petros" onclick="window.location.href='http://www.youtube.com'">유튜브 이동하기 <i class="bi bi-arrow-right"></i></button>
     </div>
   </div>
 </div>

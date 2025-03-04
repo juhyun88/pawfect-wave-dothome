@@ -105,10 +105,10 @@
     }
     
     .d1ul{
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
         flex-wrap: wrap;
         gap: 60px;
       // white-space: nowrap;
@@ -153,17 +153,21 @@
         display: inline-block;
         position: relative; 
         transition: 0.5s;
-
+        
         &:hover{
          
           .d1a{
             color:#006838 !important; //대메뉴활성화
+            
           }
         }
 
         a:hover{
-          color:#006838 !important; //대메뉴활성화
           
+          color:#ffffff !important; //대메뉴활성화
+          background-color: #006838;
+          border-radius: 5px;
+        
         }
 
 
@@ -204,8 +208,10 @@
             text-align: center;
             font-size: 16px;
             line-height: 2;
+            
             a {
               text-decoration: none;
+              
             }
            
           }
@@ -367,14 +373,14 @@
   top: 50%;  /* 손이 화면의 중앙에 오도록 설정 */
   left: 50%;
   transform: translate(-50%, -50%); /* 중앙 정렬 */
-  animation: handAnimation 5s ease-in-out forwards;  /* 손 애니메이션 */
+  animation: handAnimation 6s ease-in-out forwards;  /* 손 애니메이션 */
 }
 
 .dog2 {
   width: 300px;
   left: 50%;
   transform: translateX(-50%);
-  animation: dogAnimation 3s ease-in-out forwards;
+  animation: dogAnimation 4s ease-in-out forwards;
   animation-delay: 2s;  /* 강아지가 2초 후에 내려오기 시작 */
 }
 
@@ -437,11 +443,11 @@
 .swiper-slide img{
   width: 100%;
   height: 100%;
-  transform: scale(0.9); 
+  transform: scale(1); 
 }
 .swiper-fade .swiper-slide{
-  width: 100% !important;
-  height: 100% !important;
+  width: 100vw !important;
+  height: 100vh !important;
   top: 0 !important;
   left: 0 !important;
 
@@ -492,7 +498,7 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   margin-top: 65px;
   color: white;
-  font-family: "Paperlogy 3 Light";
+  font-family:"MangoDdobak-B";
 }
 
 .left-btn, .right-btn {
@@ -506,6 +512,7 @@
   opacity: 0.7;
   z-index: 20;
   padding: 10px 20px;
+  font-family: "Paperlogy 7 Bold";
 }
 
 .left-btn {
@@ -548,7 +555,7 @@
 .btn_petros{
   margin-top:24px;
   font-family: "Noto Sans KR";
-  width: 130px;
+  width: 140px;
   height: 30px;
   color: #1E1E1E;
   font-size: 15px;
@@ -557,6 +564,7 @@
   background-color: #FFF;
   padding-bottom: 5px;
   border: none;
+  justify-content: center;
 }
 // .petros_box {
 //   display: flex;
@@ -891,7 +899,7 @@ html, body {
     overflow-y: auto;  /* 스크롤 활성화 */
 }
 section {
-  min-height: 100vh; /* 화면의 최소 높이를 100vh로 설정 */
+    min-height: 700px;
     flex-direction: column;
  
 }

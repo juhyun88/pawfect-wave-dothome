@@ -1,3 +1,13 @@
+
+<?php
+    // if(isset($_GET['w'])){
+    //     echo "<botton>글수정</button>";
+    // }
+    // else{
+    //     echo "<botton>글쓰기</button>";
+    // }
+?>
+
 <?php
 
 require_once '../config.php';
@@ -22,9 +32,16 @@ try {
     $board = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($board) {
-        echo "<h1>" . htmlspecialchars($board['title']) . "</h1>";
+        echo '<input id="update_title" type="text" value="' . htmlspecialchars($board['title'], ENT_QUOTES) . '">';
         echo "<p>작성자: " . htmlspecialchars($board['author']) . "</p>";
-        echo "<div>" . nl2br(htmlspecialchars($board['content'])) . "</div>";
+        echo '<textarea id="update_content">' . nl2br(htmlspecialchars($board['content'])) . "</textarea>";
+
+        if(isset($_GET['w'])){
+            echo "<botton>글수정</button>";
+        }
+        else{
+            echo "<botton>글쓰기</button>";
+        }
     } else {
         echo "<script>alert('게시글을 찾을 수 없습니다.'); location.href='qustion.php';</script>";
         exit;
@@ -33,8 +50,8 @@ try {
     die("Query Failed: " . $e->getMessage());
 }
 
+
 ?>
 
+
 <a href="/page/question.php">목록</a>
-<a href="/page/correctionquestion.php?w=update&id=<?= urlencode($_GET['id']) ?>">수정</a>
-<!-- <a href="/page/writequestion.php">글쓰기</a> -->

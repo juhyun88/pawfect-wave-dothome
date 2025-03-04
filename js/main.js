@@ -38,5 +38,5 @@ document.addEventListener('DOMContentLoaded', function () {
       // swiper.slideTo(0);
       // swiper.update();
     }
-  }, 6000);
+  }, 7000);
 });
