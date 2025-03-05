@@ -20,8 +20,8 @@ include_once("../layout/top.php");
 
     <section class="d-flex flex-column justify-content-start align-items-center px-6 mt-5" >
         <div class="faqwrap text-center" >
-            <h1 class="faqtext font-semibold">FAQ</h1>
-            <h2 class="text-lg mt-3">자주 문의하는 질문에 대한 답변을 확인하실 수 있습니다.</h2>
+            <h1 class="faqtext font-semibold">Q & A</h1>
+            <h2 class="text-lg mt-3">반려동물 장례 관련하여 궁금한 질문에 답변해 드립니다.</h2>
             <div class="servicecategory flex justify-center mt-5">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">

@@ -95,10 +95,10 @@
         <div class="topmeun d-flex justify-content-center align-items-center order-1 me-auto ">
           <ul class="d1ul">
             <li class="d1li position-relative text-center"> 
-              <a href="" class="d1a d-flex justify-content-center align-items-center">브랜드</a>
+              <a href="" class="d1a d-flex justify-content-center align-items-center">브랜드소개</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                    <a href="/page/procedures.php">브랜드 Story</a></li>
+                    <a href="/page/procedures.php">브랜드 스토리</a></li>
                   <li class="d2li">
                     <a href="/page/procedures.php">기부캠페인</a></li>
                 </ul>
@@ -140,14 +140,14 @@
             <li class="d1li position-relative text-center"> 
               <a href="" class="d1a d-flex justify-content-center align-items-center">고객지원센터</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
-                  <li class="d2li">
-                    <a href="/page/petlose.php">펫로스케어</a></li>
-                  <li class="d2li">
-                  <a href="/page/petlose.php">보험</a></li>
-                  <li class="d2li">
-                    <a href="/page/hospital.php">파우펙트&펫 협력병원</a></li>
-                  <li class="d2li">
-                    <a href="/page/question.php">자주묻는질문</a></li>
+                  <li class="d2li a1">
+                    <a href="/page/petlose.php">펫&로스케어</a></li>
+                  <li class="d2li a2">
+                  <a href="/page/petlose.php">펫&보험</a></li>
+                  <li class="d2li a3">
+                    <a href="/page/hospital.php">펫&협력병원</a></li>
+                  <li class="d2li a4">
+                    <a href="/page/question.php">Q&A</a></li>
                 </ul>
             </li>
           </ul>

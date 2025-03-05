@@ -10,7 +10,7 @@
     
         <img src="https://pawfectwave.vercel.app/img/main/hand_main.svg" alt="손 이미지" class="hand" />
         <img src="https://pawfectwave.vercel.app/img/main/longani.svg" alt="강아지 이미지 2" class="dog2" />
-        <button class="circle-button"><a href="/page/service.php">추모관 바로가기</a></button>
+        
   
         <div class="swiper">
           <div class="swiper-wrapper active">
@@ -40,6 +40,7 @@
           </div>
  
         </div>
+        <button class="circle-button"><a href="/page/service.php">추모관 바로가기</a></button>
     </div>
        
 
@@ -237,7 +238,7 @@
         <h2>Petros Care</h2>
         <h1>펫로스 케어</h1>
         <p>펫로스 증후군으로 인한 마음의 치유가<br>필요한 보호자님을 위한 케어 입니다.</p>
-        <button class="btn_petros my-4" onclick="window.location.href='https://www.youtube.com'"><i class="bi bi-arrow-left"></i> 유튜브 이동하기</button>
+        <button class="btn_petros my-4" onclick="window.location.href='https://www.youtube.com/embed/4o-n_v1mKSw?start=1'"><i class="bi bi-arrow-left"></i> 유튜브 이동하기</button>
         <button class="btn_petros my-4" onclick="window.location.href='/page/petlose.php'">자세히보기 <i class="bi bi-arrow-right"></i></button>
       </div>
     </div>
@@ -260,7 +261,8 @@
       <h1>파우펙트 & 펫 웨이브</h1>
       <p>생애의 모든 순간을 함께하는, 당신의 반려동물 케어 파트너<br>동물의료센터와 함께해 건강 관리부터 마지막 순간까지 함께<br>해드립니다.</p>
       <button class="btn_petros" onclick="window.location.href='/page/hospital.php'"><i class="bi bi-arrow-left"></i> 자세히보기</button>
-      <button class="btn_petros" onclick="window.location.href='http://www.youtube.com'">유튜브 이동하기 <i class="bi bi-arrow-right"></i></button>
+      <button class="btn_petros" onclick="window.location.href='https://www.youtube.com/embed/r7yAhSSaH3c?start=1'">유튜브 이동하기 <i class="bi bi-arrow-right"></i>
+</button>
     </div>
   </div>
 </div>

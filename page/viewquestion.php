@@ -1,6 +1,8 @@
+
 <?php
 
 require_once '../config.php';
+include_once("../layout/top.php"); 
 
 // `wr_id` 값이 전달되지 않았다면 경고창 띄우고 list.php로 이동
 if (!isset($_GET['id'])) {
@@ -21,20 +23,33 @@ try {
 
     $board = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($board) {
-        echo "<h1>" . htmlspecialchars($board['title']) . "</h1>";
-        echo "<p>작성자: " . htmlspecialchars($board['author']) . "</p>";
-        echo "<div>" . nl2br(htmlspecialchars($board['content'])) . "</div>";
-    } else {
-        echo "<script>alert('게시글을 찾을 수 없습니다.'); location.href='qustion.php';</script>";
-        exit;
-    }
+
 } catch (PDOException $e) {
     die("Query Failed: " . $e->getMessage());
 }
 
 ?>
+<body>
+    <section class="d-flex flex-column justify-content-start align-items-center px-6 mt-5" >
+    <div class="container_view" id="jh_view">
+        <?php if ($board): ?>
+            <h1><?= htmlspecialchars($board['title']) ?></h1>
+            <p>작성자: <?= htmlspecialchars($board['author']) ?></p>
+            <div><?= nl2br(htmlspecialchars($board['content'])) ?></div>
+        <?php else: ?>
+            <script>
+                alert('게시글을 찾을 수 없습니다.');
+                location.href='question.php';
+            </script>
+        <?php endif; ?>
+        
+        <div class="buttons">
+            <a href="/page/question.php">목록</a>
+            <a href="/page/correctionquestion.php?w=update&id=<?= urlencode($_GET['id']) ?>">수정</a>
+        </div>
+    </div>
+       
+        </secrion>
+</body>
 
-<a href="/page/question.php">목록</a>
-<a href="/page/correctionquestion.php?w=update&id=<?= urlencode($_GET['id']) ?>">수정</a>
 <!-- <a href="/page/writequestion.php">글쓰기</a> -->
