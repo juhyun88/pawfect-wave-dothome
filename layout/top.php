@@ -51,6 +51,15 @@
     <link rel="stylesheet" href="/css/pagecss/reservation.min.css">
 
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-12WTF6LZGP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-12WTF6LZGP');
+</script>
 <body class="overflow-x-hidden">
     <header id="hd" class="py-lg-4 py-4 fixed-top">
       <div class="container d-flex justify-content-between align-items-center flex-wrap">
@@ -155,7 +164,7 @@
         </div>
 
         <ul class="reservation d-flex justify-content-end align-items-center order-2 mb-0 p-0 ms-auto">
-          <li><a href=""><i class="bi bi-geo-alt fs-4 text-white me-3"></i></a></li>
+          <li><a href="/openapi/map.php"><i class="bi bi-geo-alt fs-4 text-white me-3"></i></a></li>
           <li class="text-nowrap"><a href="/page/reservation.php"><button class="reservation-button"><img src="https://pawfectwave.vercel.app/img/svg/calendar.svg" alt="">
             <span>장례 예약</span></button></a>
           </li>
