@@ -15,13 +15,18 @@
   padding: 20px;
   font-size: 15px;
   text-align: center;
-  align-items: center;
+  align-items: start;
   display: flex;
   flex-direction: column;
 }
 
 #date-picker {
   display: none;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
 }
 
 .flatpickr-calendar {
@@ -106,12 +111,17 @@
 }
 
 textarea {
-  width: 500px;
+  width: 560px;
   height: 200px;
   background-color: #e6e6e6;
-  resize: none; /* 사용자가 크기를 조정하지 못하도록 설정 */
   white-space: pre-wrap; /* 줄 바꿈을 허용 */
   border: none;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.ballet-textarea {
+  height: 100px;
 }
 
 .bi {
@@ -125,6 +135,7 @@ textarea {
   align-items: center;
   gap: 10px;
   color: white;
+  margin-left: 45px;
 }
 
 .button-group button {
@@ -139,12 +150,73 @@ textarea {
   margin-bottom: 50px;
 }
 
-.calendar {
-  display: flex;
-  justify-content: center;
+.button-group button.active {
+  background-color: #007bff; /* Active button color */
 }
 
-select, button {
-  padding: 10px;
-  margin: 5px;
+.review-container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.review-header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.review-header .review-options {
+  color: #888;
+  cursor: pointer;
+}
+
+.review-item {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  align-items: start;
+  flex-direction: column;
+  text-align: start !important;
+}
+.review-item .profile {
+  display: flex;
+  align-items: center;
+}
+.review-item .profile .avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+.review-item .profile .info {
+  margin-left: 10px;
+}
+.review-item .profile .info .username {
+  font-weight: bold;
+}
+.review-item .profile .info .stats {
+  color: #aaa;
+  font-size: 12px;
+}
+.review-item .review-content {
+  flex: 1;
+}
+.review-item .review-content strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.review-item .review-content .date {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 5px;
 }
