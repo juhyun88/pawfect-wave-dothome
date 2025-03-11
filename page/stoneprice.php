@@ -4,7 +4,7 @@ include_once("../layout/top.php"); ?>
 
 
 <section class='vh-100'>
-    장례절차
+    스톤비용
 </section>
 
 

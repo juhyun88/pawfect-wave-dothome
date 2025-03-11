@@ -4,7 +4,7 @@ include_once("../layout/top.php"); ?>
 
 
 <section class='vh-100'>
-    장례절차
+    기부 캠페인
 </section>
 
 

@@ -4,7 +4,7 @@ include_once("../layout/top.php"); ?>
 
 
 <section class='vh-100'>
-    장례절차
+    브랜드 이야기
 </section>
 
 

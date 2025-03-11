@@ -107,20 +107,20 @@
               <a href="" class="d1a d-flex justify-content-center align-items-center">브랜드소개</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                    <a href="/page/procedures.php">브랜드 스토리</a></li>
+                    <a href="/page/brendstory.php">브랜드 스토리</a></li>
                   <li class="d2li">
-                    <a href="/page/procedures.php">기부캠페인</a></li>
+                    <a href="/page/campain.php">기부캠페인</a></li>
                 </ul>
             </li>
             <li class="d1li position-relative text-center"> 
               <a href="" class="d1a d-flex justify-content-center align-items-center">장례서비스</a>
                 <ul class="d2ul position-absolute text-white p-0 m-0 start-50 translate-middle-x">
                   <li class="d2li">
-                  <a href="/page/price.php">장례절차</a></li>
+                  <a href="/page/procedures.php">장례절차</a></li>
                   <li class="d2li">
                     <a href="/page/price.php">일반장례 비용</a></li>
                   <li class="d2li">
-                    <a href="/page/price.php">스톤 장례 비용</a></li>
+                    <a href="/page/stoneprice.php">스톤 장례 비용</a></li>
                   
                 </ul>
             </li>
@@ -143,7 +143,7 @@
                   <li class="d2li">
                     <a href="/page/service.php">봉안당(산골)</a></li>
                   <li class="d2li">
-                    <a href="/page/service.php">사이버추모관</a></li>
+                    <a href="/page/cybermemorial.php">사이버추모관</a></li>
                 </ul>
             </li>
             <li class="d1li position-relative text-center"> 
@@ -152,7 +152,7 @@
                   <li class="d2li a1">
                     <a href="/page/petlose.php">펫&로스케어</a></li>
                   <li class="d2li a2">
-                  <a href="/page/petlose.php">펫&보험</a></li>
+                  <a href="/page/insurance.php">펫&보험</a></li>
                   <li class="d2li a3">
                     <a href="/page/hospital.php">펫&협력병원</a></li>
                   <li class="d2li a4">
@@ -176,10 +176,51 @@
   
 
     </header>
-    <?php if(!defined('_INDEX_')){ // 서브페이지에서만 등장 ?>
-    <div class='contentSection' >
-      <div class="bannerimg faqimg d-flex justify-content-center flex-column align-items-center" style='background-image:url(https://<?php echo IMG_URL; ?>/img/banner/memorial_tableimage.jpg)'>
-           <h2 class='mb-5 '></h2>
-           <p class='mb-5'></p>
+
+
+    <?php 
+    if(!defined('_INDEX_')) { // 서브페이지에서만 등장
+        $current_page = basename($_SERVER['SCRIPT_NAME']); // 현재 페이지 파일명 가져오기
+
+
+
+        // 페이지별 배너 이미지 설정
+        $default_banner = ['url' => 'https://pawfectwave-team-react.vercel.app/img/banner/memorial_tableimage.jpg', 'height' => '350px'];
+        $main_banner = ['url' => 'https://pawfectwave-team-react.vercel.app/img/main/Maintop.jpg', 'height' => '600px'];
+        $main_hwasa = ['url' => 'https://pawfectwave-team-react.vercel.app/img/main/hwasa.jpg', 'height' => '600px'];
+        $main_Additional_services = ['url' => 'https://pawfectwave-team-react.vercel.app/img/main/Additional_services.jpg', 'height' => '600px'];
+        $main_online = ['url' => 'https://pawfectwave-team-react.vercel.app/img/main/online.jpg', 'height' => '600px'];
+        $main_care = ['url' => 'https://pawfectwave-team-react.vercel.app/img/main/care.jpg', 'height' => '600px'];
+
+        $banner_images = [
+            'brendstory.php' => $main_banner,
+            'campain.php'    => $main_banner,
+            'procedures.php'     => $main_banner,
+            'price.php'          => $main_banner,
+            'stoneprice.php'     => $main_banner,
+            'store.php'     => $main_hwasa,
+            'way.php'     => $main_hwasa,
+            'service.php'     => $main_Additional_services,
+            'cybermemorial.php'     => $main_online,
+            'petlose.php'     => $main_care,
+            'insurance.php'     => $main_care,
+            'hospital.php'     => $main_care,
+            'question.php'     => $main_care,
+            'default'        => $default_banner
+        ];
+
+        $banner = $banner_images[$current_page] ?? $banner_images['default'];
+        $banner_image = $banner['url'];
+        $banner_height = $banner['height'];
+
+  ?>
+  <div class='contentSection'>
+      <div class="bannerimg faqimg d-flex justify-content-center flex-column align-items-center" 
+          style="background-image: url('<?php echo $banner_image; ?>'); height: <?php echo $banner_height; ?>;">
+          <h2 class='mb-5 '></h2>
+          <p class='mb-5'></p>
       </div>
-<?php } ?>
+  </div>
+    <?php } ?>
+
+
