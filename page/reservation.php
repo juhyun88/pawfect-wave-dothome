@@ -45,7 +45,7 @@ include_once("../layout/top.php"); ?>
                         
 - 00시~06시 (야간 타임) 에 예약을 신청할 경우 예약 신청 후 대표번호로 연락을 꼭 주시기 바랍니다.
 (주간 타임에 야간 타임으로 미리 예약 신청을 하신 경우는 별도의 연락을 안 주셔도 됩니다.)"></textarea>
-                <button class="nextbutton btn-premary mt-5">다음으로 <i class="bi bi-arrow-right"></i></button>
+                <button class="nextbutton btn-premary mt-5" onclick="window.location.href='/page/reservationend.php'">다음으로 <i class="bi bi-arrow-right"></i></button>
             </div>
         </div>
     </section>

@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="/css/hyuna.min.css">
     <link rel="stylesheet" href="/css/juhyun.min.css">
     <link rel="stylesheet" href="/css/pagecss/reservation.min.css">
+    <link rel="stylesheet" href="/css/pagecss/subpage.min.css">
 
 </head>
 <!-- Google tag (gtag.js) -->

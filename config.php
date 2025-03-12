@@ -1,5 +1,5 @@
 <?php
-// config.php
+
 
 // 루트 디렉토리 설정
 define('ROOT_DIR', __DIR__);
@@ -32,4 +32,11 @@ $title = isset($_POST['title']) ? trim($_POST['title']) : '';
 $content = isset($_POST['content']) ? trim($_POST['content']) : '';
 $created_at = date('Y-m-d H:i:s');  
 $updated_at = $created_at;         
+
+
+//////////////////////////////////////////////////////////////////
+
+
+
 ?>
+
