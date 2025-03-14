@@ -220,3 +220,180 @@ textarea{
     }
 }
 
+////////////////////////////////////////////////////////
+
+
+    .reservationend_section{
+        flex-direction:row;
+    }
+
+    .reservation-form {
+        max-width: 900px;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .text-center {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.form-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#reservationend{
+    flex-direction: row !important;
+        input {
+           
+            padding: 8px;
+            margin-top: 5px;
+           
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input,
+        select {
+            
+            padding: 8px;
+            margin-top: 5px;
+            
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input::placeholder {
+            color: #aaa;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+           
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+}
+
+.dropdown-container {
+    position: relative;
+}
+.custom-dropdown {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.dropdown-options {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    max-height: 200px; /* Prevent excessive height */
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.dropdown-options li {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.dropdown-options li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-container select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+}
+.preview-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 100px;
+    
+    
+}
+.dropdown-container select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+select option[disabled] {
+    color: #aaa;
+}
+
+select option[selected] {
+    color: #555;
+}
+
+.submit-section {
+    margin-top: 20px;
+}
+
+
+.agreement-section {
+
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-left: auto;
+    margin-top: -145px;
+    margin-right: 56px;
+}
+
+.agreement-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.agreement-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}

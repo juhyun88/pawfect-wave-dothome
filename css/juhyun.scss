@@ -10,26 +10,17 @@
 
 //스크롤이벤트 감지
 
-.fixed{
-  //스크롤 시작
-  #hd{
- 
-    background: rgba(255, 255, 255, 0.5); /* 반투명 배경 */
-    backdrop-filter: blur(10px); /* 배경 흐리게 */
-    -webkit-backdrop-filter: blur(10px); /* Safari 지원 */
+.fixed-top {
+  transition: transform 0.3s ease, background 0.3s ease; // Smooth animation
+
+  &.scrolldown {
+      transform: translateY(-100%); // Move the header out of view
   }
-  &.scrollup{
-    #hd{
-      transform: translateY(0)
-    }
-  }
-  &.scrolldown{
-    #hd{
-      transform: translateY(-100%)
-    }
+
+  &.scrollup {
+      transform: translateY(0); // Reset the header to be fully visible
   }
 }
-
 
 #hd{
 
@@ -65,7 +56,7 @@
     transition: 0.3s ease;
   
   }
-  .topmeun{
+  .topmenu{
     margin-left: 3rem;
 
     &.wide{
@@ -906,7 +897,7 @@ html, body {
 }
 section {
     min-height: 700px;
-    flex-direction: column;
+ 
  
 }
 .container, .faqwrap {

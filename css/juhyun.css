@@ -1,14 +1,12 @@
 @charset "UTF-8";
-.fixed #hd {
-  background: rgba(255, 255, 255, 0.5); /* 반투명 배경 */
-  backdrop-filter: blur(10px); /* 배경 흐리게 */
-  -webkit-backdrop-filter: blur(10px); /* Safari 지원 */
+.fixed-top {
+  transition: transform 0.3s ease, background 0.3s ease;
 }
-.fixed.scrollup #hd {
-  transform: translateY(0);
-}
-.fixed.scrolldown #hd {
+.fixed-top.scrolldown {
   transform: translateY(-100%);
+}
+.fixed-top.scrollup {
+  transform: translateY(0);
 }
 
 #hd {
@@ -40,19 +38,19 @@
   background-color: #1E1E1E; /* 햄버거 메뉴가 잘 보이도록 색상 설정 */
   transition: 0.3s ease;
 }
-#hd .topmeun {
+#hd .topmenu {
   margin-left: 3rem;
 }
-#hd .topmeun.wide {
+#hd .topmenu.wide {
   left: 0;
 }
-#hd .topmeun .closebtn {
+#hd .topmenu .closebtn {
   display: none;
   position: absolute;
   padding: 0;
 }
 @media (max-width: 1024px) {
-  #hd .topmeun {
+  #hd .topmenu {
     margin-left: 0;
     position: fixed;
     height: 100vh;
@@ -63,11 +61,11 @@
     right: 0;
     top: 0;
   }
-  #hd .topmeun .d1ul {
+  #hd .topmenu .d1ul {
     flex-direction: column;
     justify-content: center !important;
   }
-  #hd .topmeun .closebtn {
+  #hd .topmenu .closebtn {
     right: 30px;
     top: 10px;
     display: block;
@@ -75,7 +73,7 @@
     font-weight: bold;
   }
 }
-#hd .topmeun .d1ul {
+#hd .topmenu .d1ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -83,7 +81,7 @@
   flex-wrap: wrap;
   gap: 60px;
 }
-#hd .topmeun .d1ul:before {
+#hd .topmenu .d1ul:before {
   content: "";
   display: block;
   position: absolute;
@@ -94,36 +92,36 @@
   height: 0;
   transition: 0.5s;
 }
-#hd .topmeun .d1ul a {
+#hd .topmenu .d1ul a {
   color: rgb(14, 13, 13);
 }
-#hd .topmeun .d1ul a:hover {
+#hd .topmenu .d1ul a:hover {
   font-weight: 600;
 }
-#hd .topmeun .d1ul:hover .d1li {
+#hd .topmenu .d1ul:hover .d1li {
   padding: 0 1rem;
 }
 @media (min-width: 1024px) {
-  #hd .topmeun .d1ul:hover:before {
+  #hd .topmenu .d1ul:hover:before {
     height: 280px;
   }
-  #hd .topmeun .d1ul:hover .d2ul {
+  #hd .topmenu .d1ul:hover .d2ul {
     height: 280px !important;
   }
 }
-#hd .topmeun .d1ul .d1li {
+#hd .topmenu .d1ul .d1li {
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-#hd .topmeun .d1ul .d1li:hover .d1a {
+#hd .topmenu .d1ul .d1li:hover .d1a {
   color: #006838 !important;
 }
-#hd .topmeun .d1ul .d1li a:hover {
+#hd .topmenu .d1ul .d1li a:hover {
   color: #ffffff !important;
   border-radius: 5px;
 }
-#hd .topmeun .d1ul .d1li .d1a {
+#hd .topmenu .d1ul .d1li .d1a {
   text-decoration: none;
   font-size: 19px;
   font-family: "Paperlogy 4 Regular";
@@ -133,11 +131,11 @@
   align-items: center;
 }
 @media (max-width: 1024px) {
-  #hd .topmeun .d1ul .d1li .d1a {
+  #hd .topmenu .d1ul .d1li .d1a {
     font-size: 20px;
   }
 }
-#hd .topmeun .d1ul .d1li .d2ul {
+#hd .topmenu .d1ul .d1li .d2ul {
   height: 0;
   overflow: hidden;
   transition: 0.5s;
@@ -150,42 +148,42 @@
   left: 0;
   min-width: 150px;
 }
-#hd .topmeun .d1ul .d1li .d2ul:before {
+#hd .topmenu .d1ul .d1li .d2ul:before {
   content: "";
   display: block;
   height: 4rem;
 }
-#hd .topmeun .d1ul .d1li .d2ul .d2li {
+#hd .topmenu .d1ul .d1li .d2ul .d2li {
   padding: 5px 10px;
   text-align: center;
   font-size: 16px;
   line-height: 2;
 }
-#hd .topmeun .d1ul .d1li .d2ul .d2li:hover {
+#hd .topmenu .d1ul .d1li .d2ul .d2li:hover {
   background-color: #006838; /* 원하는 색상으로 변경 */
   border-radius: 15px;
 }
-#hd .topmeun .d1ul .d1li .d2ul .d2li a {
+#hd .topmenu .d1ul .d1li .d2ul .d2li a {
   text-decoration: none;
 }
-#hd .topmeun .d1ul .d1li .d2ul .d2li .d2li .a1, #hd .topmeun .d1ul .d1li .d2ul .d2li .d2li .a2, #hd .topmeun .d1ul .d1li .d2ul .d2li .d2li .a3, #hd .topmeun .d1ul .d1li .d2ul .d2li .d2li .a4 {
+#hd .topmenu .d1ul .d1li .d2ul .d2li .d2li .a1, #hd .topmenu .d1ul .d1li .d2ul .d2li .d2li .a2, #hd .topmenu .d1ul .d1li .d2ul .d2li .d2li .a3, #hd .topmenu .d1ul .d1li .d2ul .d2li .d2li .a4 {
   background-color: #006838;
 }
 @media (max-width: 1024px) {
-  #hd .topmeun .d1ul .d1li .d2ul {
+  #hd .topmenu .d1ul .d1li .d2ul {
     position: relative !important;
     height: auto;
     max-height: 0;
   }
-  #hd .topmeun .d1ul .d1li .d2ul.over {
+  #hd .topmenu .d1ul .d1li .d2ul.over {
     max-height: 200px;
   }
 }
-#hd .topmeun .d1ul .d1li .d2ul.over {
+#hd .topmenu .d1ul .d1li .d2ul.over {
   max-height: 300px; /* 필요에 따라 높이를 조정 */
   overflow: hidden;
 }
-#hd .topmeun .d1ul a:hover {
+#hd .topmenu .d1ul a:hover {
   color: #006838 !important;
 }
 #hd .here {
@@ -769,7 +767,6 @@ html, body {
 
 section {
   min-height: 700px;
-  flex-direction: column;
 }
 
 .container, .faqwrap {

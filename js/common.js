@@ -1,47 +1,57 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let lastScrollY = 0;
-  let isScrolling;
-  const body = document.body;
-  const mbtn = document.querySelector(".hamburger-menu");
-  const widemenu = document.querySelector(".topmeun");
-  const moclose = document.querySelector("#hd .topmeun .closebtn");
-  const monaviaItems = document.querySelectorAll('.d1ul > li > a');  // 대메뉴 아이템들
+    let lastScrollY = 0; // Track the last scroll position
+    const header = document.querySelector("#hd"); // Target the header
+    const mbtn = document.querySelector(".hamburger-menu"); // Select the hamburger menu
+    const widemenu = document.querySelector(".topmenu"); // Select the wide menu
+    const moclose = document.querySelector("#hd .topmenu .closebtn"); // Select the close button
 
-  // 스크롤 이벤트 최적화 (Debouncing)
-  const debounceScroll = () => {
-      clearTimeout(isScrolling);
-      isScrolling = setTimeout(() => {
-          console.log("스크롤 멈춤!");
-      }, 200); // 스크롤 멈추면 200ms 후에 실행
-  };
+    if (!header) {
+        console.error("Error: Header element not found!");
+        return;
+    }
 
-  window.addEventListener('scroll', () => {
-      // 현재 스크롤 위치
-      const currentScrollY = window.scrollY;
+    if (!mbtn) {
+        console.error("Error: Hamburger menu element not found!");
+    }
 
-      // 50px 이상 스크롤 했을 때
-      if (currentScrollY > 50) {
-          body.classList.add('fixed');
+    if (!widemenu) {
+        console.error("Error: Top menu element not found!");
+    }
 
-          // 스크롤 방향 처리 (상위로 올리면 scrollup, 아래로 내리면 scrolldown)
-          if (currentScrollY > lastScrollY) {
-              body.classList.remove('scrollup');
-              body.classList.add('scrolldown');
-          } else {
-              body.classList.remove('scrolldown');
-              body.classList.add('scrollup');
-          }
-      } else {
-          // 50px 미만일 때 fixed 클래스 및 방향 관련 클래스 제거
-          body.classList.remove('fixed', 'scrollup', 'scrolldown');
-      }
+    // Handle scroll functionality for header
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
 
-      // 마지막 스크롤 위치 업데이트
-      lastScrollY = currentScrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 50) {
+            header.classList.remove('scrollup');
+            header.classList.add('scrolldown');
+        } else if (currentScrollY < lastScrollY) {
+            header.classList.remove('scrolldown');
+            header.classList.add('scrollup');
+        }
 
-      // 디바운싱 처리
-      debounceScroll();
-  });
+        lastScrollY = currentScrollY; // Update the last scroll position
+    });
+
+    // Add event listener for hamburger menu (if it exists)
+    if (mbtn) {
+        mbtn.addEventListener('click', () => {
+            widemenu.classList.add("wide");
+        });
+    }
+
+    // Add event listener for close button (if it exists)
+    if (moclose) {
+        moclose.addEventListener('click', () => {
+            widemenu.classList.remove("wide");
+        });
+    }
+});
+
+
+
+
+  
 
   // 햄버거 메뉴 클릭 시 메뉴 열기
   mbtn.addEventListener('click', () => {
@@ -70,8 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
               // 현재 클릭된 항목의 서브메뉴에만 'over' 클래스 추가
               if (d2ul) {
                   d2ul.classList.add('over');
+                  
               }
           });
       });
-  }
-});
+  };
+
